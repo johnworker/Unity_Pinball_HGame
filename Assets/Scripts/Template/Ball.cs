@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// Make sure this has a rigidbody to do GetComponent on
+// 確保它有一個剛體來執行 取得組件
 [RequireComponent(typeof(Rigidbody))]
 public class Ball : MonoBehaviour {
 	public Rigidbody rigidBody { get; private set; }
@@ -12,7 +12,7 @@ public class Ball : MonoBehaviour {
 	}
 
 	/// <summary>
-	/// Add a instantaneous force to the ball
+	/// 給球加一個瞬間力
 	/// </summary>
 	/// <param name="force"></param>
 	public void AddForce(Vector3 force) {

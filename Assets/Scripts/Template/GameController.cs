@@ -25,48 +25,63 @@ public class GameController : MonoBehaviour {
 	}
 
 	void Update() {
-		// Do whatever we want when game is running
+		// 在遊戲運行時做我們想做的事
 		if (game.isActive) {
 			if (game.ballReady) {
 				ShootInput();
+				// StartCoroutine(AutoShootWait());
 			}
 		}
 
-		// Allow flippers in main menu
+		// 在主菜單中允許擋板
 		FlipperInput();
 	}
 
 	/// <summary>
-	/// Manages the spring angle values based upon the Input
+	/// 根據輸入管理彈簧角度值
 	/// </summary>
 	void FlipperInput() {
-		// Left spring
+		// 左彈簧
 		JointSpring leftSpring = leftFlipper.spring;
 		leftSpring.targetPosition = Input.GetKey(KeyCode.A) ? -flipperActiveAngle : 0f;
 		leftFlipper.spring = leftSpring;
 
-		// Right spring
+		// 右彈簧
 		JointSpring rightSpring = rightFlipper.spring;
 		rightSpring.targetPosition = Input.GetKey(KeyCode.D) ? flipperActiveAngle : 0f;
 		rightFlipper.spring = rightSpring;
 	}
 
 	/// <summary>
-	/// Manages the input for shooting a ball
+	/// 按鈕輸入射擊彈珠管理
 	/// </summary>
 	void ShootInput() {
-		// If the key is down gain power
+		// 如果按下鍵獲得發射 能量
 		if (Input.GetKey(KeyCode.Space)) {
 			power += powerGain * Time.deltaTime;
 		}
 
-		// When released add the based on 0..1 between the minMaxForce
+		// 釋放時在 minMaxForce 之間添加基於 0..1
 		if (Input.GetKeyUp(KeyCode.Space)) {
 			game.ShootBall(minMaxForce.x + (Mathf.Clamp01(power) * (minMaxForce.y - minMaxForce.x)));
 			power = 0f;
 		}
 
-		// Update the UI (will automaticly clamp between 0..1)
+		// 更新 UI（將自動夾在 0..1 之間）
 		powerImage.fillAmount = power;
 	}
+	
+	/*
+	// 按下開始按鈕幾秒後自動發射彈珠
+	IEnumerator AutoShootWait()
+	{
+		yield return new WaitForSeconds(3f);
+
+		GameObject.FindObjectOfType<Game>().StartGame();
+		game.ShootBall(minMaxForce.x + (Mathf.Clamp01(minMaxForce.y - minMaxForce.x)));
+
+		// 發射一顆彈珠停止
+	}
+	*/
+
 }

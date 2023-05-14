@@ -2,30 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// Make sure OnCollisionEnter will get called on this object
+// 確保將在此對像上調用 OnCollisionEnter
 [RequireComponent(typeof(Collider))]
 public class LoseArea : MonoBehaviour {
 
 	/// <summary>
-	/// Will check if a ball collided with this object
+	/// 將檢查球是否與該對象發生碰撞
 	/// </summary>
 	/// <param name="collider"></param>
 	void OnTriggerEnter(Collider collider) {
 		Ball ball = collider.transform.GetComponent<Ball>();
 
 		if (ball) {
-			// Could change this to .gameObject if we want entire thing gone
-			// But for now we just destroy the script so the ball stays
+			// 如果我們想要整個東西消失，可以將其更改為 .gameObject
+			// 但現在我們只是毀掉腳本，讓球留下來
 			Destroy(ball);
 
-			// Sometimes Destory is quick enough and sometimes not
+			// 有時 摧毀 足夠快，有時又不夠快
 			Game.instance.CheckGameState();
 			StartCoroutine(UpdateGame());
 		}
 	}
 
 	/// <summary>
-	/// Call the CheckGameState one frame later because of slow Destroy(...) 
+	/// 由於 Destroy(...) 速度較慢，一幀後調用 CheckGameState
 	/// </summary>
 	/// <returns></returns>
 	IEnumerator UpdateGame() {

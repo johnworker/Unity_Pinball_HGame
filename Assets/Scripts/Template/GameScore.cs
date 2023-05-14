@@ -14,7 +14,7 @@ public class GameScore : MonoBehaviour {
 	public string scoreEndTextFormat = "Final Score: {0}";
 
 	/// <summary>
-	/// Add score to the current score
+	/// 將分數添加到當前分數
 	/// </summary>
 	/// <param name="score">Amount</param>
 	public void AddScore(int score) {
@@ -23,7 +23,7 @@ public class GameScore : MonoBehaviour {
 	}
 
 	/// <summary>
-	/// Clear the current score
+	/// 清除當前分數
 	/// </summary>
 	public void ClearScore() {
 		score = 0;
@@ -31,7 +31,7 @@ public class GameScore : MonoBehaviour {
 	}
 
 	/// <summary>
-	/// Update the score UI elements with correct formatting
+	/// 使用正確的格式更新分數 UI 元素
 	/// </summary>
 	void UpdateScore() {
 		scoreText.text = string.Format(scoreTextFormat, this.score);
