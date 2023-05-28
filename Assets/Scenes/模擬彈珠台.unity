@@ -860,8 +860,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259418537}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.01, y: 0.25, z: -4.043}
-  m_LocalScale: {x: 0.099999994, y: 0.5, z: 4}
+  m_LocalPosition: {x: 3.01, y: 0.25, z: -3.55}
+  m_LocalScale: {x: 0.099999994, y: 0.5, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 789939518}
@@ -1504,7 +1504,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &466665518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2245,14 +2245,13 @@ GameObject:
   - component: {fileID: 718441708}
   - component: {fileID: 718441705}
   - component: {fileID: 718441707}
-  - component: {fileID: 718441706}
   m_Layer: 0
   m_Name: Game
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &718441705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2260,7 +2259,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 718441704}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8849b42223777d4b87e6e7a5d87f1a4, type: 3}
   m_Name: 
@@ -2276,24 +2275,6 @@ MonoBehaviour:
   ballDisplay: {fileID: 1193190341}
   ballPrefab: {fileID: 114490561531822830, guid: fec322a09db1d494e8746a6d7030bf27, type: 3}
   ballSpawnPoint: {fileID: 1443309768}
---- !u!114 &718441706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 718441704}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31dfe6c13d664b747aff84d53bdc04a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftFlipper: {fileID: 1676107326}
-  rightFlipper: {fileID: 1276286616}
-  flipperActiveAngle: 45
-  minMaxForce: {x: 10, y: 20}
-  powerGain: 1.2
-  powerImage: {fileID: 1732242489}
 --- !u!114 &718441707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3501,7 +3482,6 @@ GameObject:
   - component: {fileID: 1276286619}
   - component: {fileID: 1276286618}
   - component: {fileID: 1276286617}
-  - component: {fileID: 1276286616}
   m_Layer: 0
   m_Name: Flipper Right
   m_TagString: Untagged
@@ -3509,42 +3489,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!59 &1276286616
-HingeJoint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1276286615}
-  m_ConnectedBody: {fileID: 0}
-  m_ConnectedArticulationBody: {fileID: 0}
-  m_Anchor: {x: 0, y: 0.1, z: 0.5}
-  m_Axis: {x: 0, y: 1, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 1.7541251, y: 1.335135, z: -7.9311285}
-  m_UseSpring: 1
-  m_Spring:
-    spring: 50000
-    damper: 150
-    targetPosition: 0
-  m_UseMotor: 0
-  m_Motor:
-    targetVelocity: 0
-    force: 0
-    freeSpin: 0
-  m_UseLimits: 1
-  m_Limits:
-    min: 0
-    max: 45
-    bounciness: 0
-    bounceMinVelocity: 0.2
-    contactDistance: 0
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 1
 --- !u!54 &1276286617
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4196,7 +4140,6 @@ GameObject:
   - component: {fileID: 1676107329}
   - component: {fileID: 1676107328}
   - component: {fileID: 1676107327}
-  - component: {fileID: 1676107326}
   m_Layer: 0
   m_Name: Flipper Left
   m_TagString: Untagged
@@ -4204,42 +4147,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!59 &1676107326
-HingeJoint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1676107325}
-  m_ConnectedBody: {fileID: 0}
-  m_ConnectedArticulationBody: {fileID: 0}
-  m_Anchor: {x: 0, y: 0.1, z: -0.5}
-  m_Axis: {x: 0, y: 1, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -1.6828449, y: 1.335135, z: -7.9444485}
-  m_UseSpring: 1
-  m_Spring:
-    spring: 50000
-    damper: 150
-    targetPosition: 0
-  m_UseMotor: 0
-  m_Motor:
-    targetVelocity: 0
-    force: 0
-    freeSpin: 0
-  m_UseLimits: 1
-  m_Limits:
-    min: -45
-    max: 0
-    bounciness: 0
-    bounceMinVelocity: 0.2
-    contactDistance: 0
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 1
 --- !u!54 &1676107327
 Rigidbody:
   m_ObjectHideFlags: 0
