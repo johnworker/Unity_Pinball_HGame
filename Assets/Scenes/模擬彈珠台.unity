@@ -369,7 +369,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4112765665461340, guid: fec322a09db1d494e8746a6d7030bf27, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.31
+      value: 4.81
       objectReference: {fileID: 0}
     - target: {fileID: 4112765665461340, guid: fec322a09db1d494e8746a6d7030bf27, type: 3}
       propertyPath: m_LocalPosition.y
@@ -377,7 +377,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4112765665461340, guid: fec322a09db1d494e8746a6d7030bf27, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.74
+      value: -6.89
       objectReference: {fileID: 0}
     - target: {fileID: 4112765665461340, guid: fec322a09db1d494e8746a6d7030bf27, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2636,7 +2636,7 @@ GameObject:
   - component: {fileID: 1276286618}
   - component: {fileID: 1276286617}
   - component: {fileID: 1276286623}
-  - component: {fileID: 1276286624}
+  - component: {fileID: 1276286625}
   m_Layer: 0
   m_Name: "\u53F3\u64CB\u677F"
   m_TagString: Untagged
@@ -2774,7 +2774,7 @@ HingeJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!114 &1276286624
+--- !u!114 &1276286625
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2783,14 +2783,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1276286615}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7242b33651d496f4bb16780049498326, type: 3}
+  m_Script: {fileID: 11500000, guid: 22a9ac7d4cee4cf409f543ca8ac650ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restPosition: 0
-  pressedPosition: 45
-  hitStrenght: 10000
-  flipperDamper: 150
-  inputName: RFlipper
+  force: 300
+  forceDirection: {x: 0, y: 0, z: 1}
+  buttonName: RFlipper
+  offset: {x: -1, y: 0, z: 0}
 --- !u!1 &1383294873
 GameObject:
   m_ObjectHideFlags: 0
@@ -2987,6 +2986,66 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471548394}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1516408746
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1516408750}
+  - component: {fileID: 1516408752}
+  - component: {fileID: 1516408751}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1516408750
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516408746}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.78, y: 1.25, z: -7.1}
+  m_LocalScale: {x: 0.575, y: 0.575, z: 0.575}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1516408751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516408746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c873396f96c2e7941b1160d421ba2310, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 800
+  buttonName: Jump
+--- !u!65 &1516408752
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516408746}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1529981808
 GameObject:
   m_ObjectHideFlags: 0
@@ -3069,7 +3128,7 @@ GameObject:
   - component: {fileID: 1676107328}
   - component: {fileID: 1676107327}
   - component: {fileID: 1676107333}
-  - component: {fileID: 1676107334}
+  - component: {fileID: 1676107335}
   m_Layer: 0
   m_Name: "\u5DE6\u64CB\u677F"
   m_TagString: Untagged
@@ -3207,7 +3266,7 @@ HingeJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!114 &1676107334
+--- !u!114 &1676107335
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3216,14 +3275,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1676107325}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7242b33651d496f4bb16780049498326, type: 3}
+  m_Script: {fileID: 11500000, guid: 22a9ac7d4cee4cf409f543ca8ac650ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restPosition: 0
-  pressedPosition: -45
-  hitStrenght: 10000
-  flipperDamper: 150
-  inputName: LFlipper
+  force: 300
+  forceDirection: {x: 0, y: 0, z: 1}
+  buttonName: LFlipper
+  offset: {x: 1, y: 0, z: 0}
 --- !u!1 &1693782341
 GameObject:
   m_ObjectHideFlags: 0
