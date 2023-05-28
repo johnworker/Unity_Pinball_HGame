@@ -13,6 +13,7 @@ public class ShootBall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // ¦pªG ¿é¤J«ö¶s(buttonName)
         if (Input.GetButtonDown(buttonName))
         {
             foreach (Rigidbody ball in ballList)
