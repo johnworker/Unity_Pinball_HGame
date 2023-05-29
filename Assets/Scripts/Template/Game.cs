@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Game : MonoBehaviour {
 	public static Game instance { get; private set; }
@@ -9,7 +10,7 @@ public class Game : MonoBehaviour {
 	public bool isActive = false;
 	public bool ballReady = true;
 	public int ballCount = 3;
-	public Text ballCountText;
+	public TextMeshProUGUI ballCountText;
 
 	[Header("Game UI")]
 	public RectTransform menuPanel;

@@ -11,7 +11,7 @@ public class GameScore : MonoBehaviour {
 	public TextMeshProUGUI scoreText;
 	public string scoreTextFormat = "Score: {0}";
 
-	public Text scoreEndText;
+	public TextMeshProUGUI scoreEndText;
 	public string scoreEndTextFormat = "Final Score: {0}";
 
 	/// <summary>
