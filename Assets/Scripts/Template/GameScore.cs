@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 [RequireComponent(typeof(Game))]
 public class GameScore : MonoBehaviour {
 	public int score { get; private set; }
 
-	public Text scoreText;
+	public TextMeshProUGUI scoreText;
 	public string scoreTextFormat = "Score: {0}";
 
 	public Text scoreEndText;

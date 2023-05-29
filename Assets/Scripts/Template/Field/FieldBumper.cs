@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// Make sure OnCollisionEnter will get called on this object
+// 確保將在此對像上調用 OnCollisionEnter
 [RequireComponent(typeof(Collider))]
 public class FieldBumper : MonoBehaviour {
 	// How strong will the ball be reflected

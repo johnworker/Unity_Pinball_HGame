@@ -25,6 +25,8 @@ public class Game : MonoBehaviour {
 	public GameScore score { get; private set; }
 	public GameController controller { get; private set; }
 
+	public GameObject otherCanvas;
+
 	void Awake() {
 		instance = this;
 
@@ -59,18 +61,26 @@ public class Game : MonoBehaviour {
 		menuPanel.gameObject.SetActive(false);
 		gamePanel.gameObject.SetActive(true);
 		endPanel.gameObject.SetActive(false);
+
+		otherCanvas.SetActive(false);
 	}
 
 	/// <summary>
 	/// 結束遊戲, 將套用正確的活動並顯示右側面板
 	/// </summary>
 	public void EndGame() {
+
 		isActive = false;
+
+		otherCanvas.SetActive(true);
+
 
 		// 隱藏右側面板
 		menuPanel.gameObject.SetActive(false);
 		gamePanel.gameObject.SetActive(false);
 		endPanel.gameObject.SetActive(true);
+
+
 	}
 
 	/// <summary>
