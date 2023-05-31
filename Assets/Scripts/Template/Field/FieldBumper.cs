@@ -5,12 +5,12 @@ using UnityEngine;
 // 確保將在此對像上調用 OnCollisionEnter
 [RequireComponent(typeof(Collider))]
 public class FieldBumper : MonoBehaviour {
-	// How strong will the ball be reflected
+	// 球反射的強度有多大
 	public float bounceForce = 1.3f;
 
 	/// <summary>
-	/// Will check if a ball collided with this object
-	/// If so, apply a negative force of the first contact point times the bounceForce
+	/// 將檢查球是否與該對象發生碰撞
+	/// 如果是這樣，請施加第一個接觸點乘以彈跳力的負力
 	/// </summary>
 	/// <param name="collision"></param>
 	void OnCollisionEnter(Collision collision) {
