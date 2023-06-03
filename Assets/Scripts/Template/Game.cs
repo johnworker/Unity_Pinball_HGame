@@ -44,6 +44,8 @@ public class Game : MonoBehaviour {
 		menuPanel.gameObject.SetActive(true);
 		gamePanel.gameObject.SetActive(false);
 		endPanel.gameObject.SetActive(false);
+
+		otherCanvas.SetActive(true);
 	}
 
 	/// <summary>

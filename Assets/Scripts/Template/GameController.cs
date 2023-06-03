@@ -43,7 +43,7 @@ public class GameController : MonoBehaviour {
 	void FlipperInput() {
 		// 左彈簧
 		JointSpring leftSpring = leftFlipper.spring;
-		leftSpring.targetPosition = Input.GetKey(KeyCode.A) ? -flipperActiveAngle : 0f;
+		leftSpring.targetPosition = Input.GetKey(KeyCode.A) ? flipperActiveAngle : 0f;
 		leftFlipper.spring = leftSpring;
 
 		// 右彈簧
@@ -71,17 +71,4 @@ public class GameController : MonoBehaviour {
 		powerImage.fillAmount = power;
 	}
 	
-	/*
-	// 按下開始按鈕幾秒後自動發射彈珠
-	IEnumerator AutoShootWait()
-	{
-		yield return new WaitForSeconds(3f);
-
-		GameObject.FindObjectOfType<Game>().StartGame();
-		game.ShootBall(minMaxForce.x + (Mathf.Clamp01(minMaxForce.y - minMaxForce.x)));
-
-		// 發射一顆彈珠停止
-	}
-	*/
-
 }
