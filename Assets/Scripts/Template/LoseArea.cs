@@ -16,7 +16,7 @@ public class LoseArea : MonoBehaviour {
 		if (ball) {
 			// 如果我們想要整個東西消失，可以將其更改為 .gameObject
 			// 但現在我們只是毀掉腳本，讓球留下來
-			Destroy(ball);
+			Destroy(ball.gameObject);
 
 			// 有時 摧毀 足夠快，有時又不夠快
 			Game.instance.CheckGameState();
