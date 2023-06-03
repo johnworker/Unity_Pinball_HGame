@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 7560808849058158121}
   - component: {fileID: 7560808849058158120}
   - component: {fileID: 7560808849058158123}
-  - component: {fileID: 8689223505399887976}
+  - component: {fileID: 5787569289229485776}
+  - component: {fileID: 4353527368980728189}
   m_Layer: 0
   m_Name: "\u969C\u7919\u7269"
   m_TagString: Untagged
@@ -98,7 +99,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8689223505399887976
+--- !u!114 &5787569289229485776
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -107,10 +108,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 7560808849058158133}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7541716b3bd1694fa12b23c350c0099, type: 3}
+  m_Script: {fileID: 11500000, guid: af22f74e36ab2d54d979a9eeee9d4d25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstaclePrefab: {fileID: 7560808849058158133}
-  generationInterval: 2
-  minSpawnPoint: {fileID: 7560808849058158122}
-  maxSpawnPoint: {fileID: 0}
+--- !u!114 &4353527368980728189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560808849058158133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a169bbf9cf5db1d439e878ab255e8bb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 100
