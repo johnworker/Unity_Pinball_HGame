@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18386897, g: 0.22901526, b: 0.30311206, a: 1}
+  m_IndirectSpecularColor: {r: 0.18386935, g: 0.22901589, b: 0.30311334, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2415,7 +2415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstaclePrefab: {fileID: 7560808849058158133, guid: e0c3a77ad3c64f34990cc5c1b1fe9fd2, type: 3}
   generationInterval: 10
-  spawnSize: {x: 10, y: 0.1, z: 10}
+  spawnSize: {x: 9, y: 0.1, z: 10}
   canSpawnTotal: 10
 --- !u!1 &705507993
 GameObject:
