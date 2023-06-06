@@ -165,7 +165,7 @@ public class Game : MonoBehaviour {
 	/// 還將更新虛擬顯示球和UI界面
 	/// </summary>
 	/// <param name="ready"></param>
-	void SetBallReady(bool ready) {
+	public void SetBallReady(bool ready) {
 		ballReady = ready;
 		ballDisplay.SetActive(ready);
 		ballCountText.text = ballCount.ToString();
