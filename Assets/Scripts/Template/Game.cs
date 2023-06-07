@@ -69,11 +69,11 @@ public class Game : MonoBehaviour {
 		SetBallReady(false);
 
 		// 顯示右側的 UI 面板
-		menuPanel.gameObject.SetActive(true);
+		menuPanel.gameObject.SetActive(false);
 		gamePanel.gameObject.SetActive(false);
 		endPanel.gameObject.SetActive(false);
 
-		otherCanvas.SetActive(true);
+		otherCanvas.SetActive(false);
 	}
 	/*
 	 * 在 Start() 方法中，首先將 isActive 屬性設置為 false，表示遊戲目前不處於活動狀態。
