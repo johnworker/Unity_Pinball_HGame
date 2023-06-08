@@ -48,6 +48,7 @@ public class Game : MonoBehaviour {
 
 		score = GetComponent<GameScore>();
 		controller = GetComponent<GameController>();
+		StartGame();
 	}
 
 	/*在 Awake() 方法中，首先將 instance 屬性設置為當前的 Game 實例。
@@ -64,13 +65,13 @@ public class Game : MonoBehaviour {
 	 */
 
 	void Start() {
-		isActive = false;
+		isActive = true;
 
-		SetBallReady(false);
+		SetBallReady(true);
 
 		// 顯示右側的 UI 面板
-		menuPanel.gameObject.SetActive(false);
-		gamePanel.gameObject.SetActive(false);
+		menuPanel.gameObject.SetActive(true);
+		gamePanel.gameObject.SetActive(true);
 		endPanel.gameObject.SetActive(false);
 
 		otherCanvas.SetActive(false);
