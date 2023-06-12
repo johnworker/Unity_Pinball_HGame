@@ -115,13 +115,13 @@ public class Game : MonoBehaviour {
 
 		isActive = false;
 
-		otherCanvas.SetActive(true);
+		otherCanvas.SetActive(false);
 
 
 		// 隱藏右側面板
 		menuPanel.gameObject.SetActive(false);
 		gamePanel.gameObject.SetActive(false);
-		endPanel.gameObject.SetActive(true);
+		endPanel.gameObject.SetActive(false);
 
 
 	}
