@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Game : MonoBehaviour {
 	// instance：這是一個靜態屬性，用於存儲 Game 類別的唯一實例。
@@ -123,7 +124,7 @@ public class Game : MonoBehaviour {
 		gamePanel.gameObject.SetActive(false);
 		endPanel.gameObject.SetActive(false);
 
-
+		SceneManager.LoadScene("結束畫面選單");
 	}
 
 	/// <summary>
