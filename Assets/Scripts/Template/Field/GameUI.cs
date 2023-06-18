@@ -7,6 +7,15 @@ using UnityEngine.SceneManagement;
 
 public class GameUI : MonoBehaviour
 {
+    public TextMeshProUGUI scoreEndText;
+    public string scoreEndTextFormat = "Final Score: {0}";
+
+
+    private void Start()
+    {
+        int finalScore = ScoreManager.GetFinalScore();
+        scoreEndText.text = string.Format(scoreEndTextFormat, finalScore);
+    }
 
     // UI按鈕觸發遊戲場景載入
     public void StartGame()

@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-[RequireComponent(typeof(Game))]
 public class GameScore : MonoBehaviour {
 	public int score { get; private set; }
 
@@ -37,5 +36,8 @@ public class GameScore : MonoBehaviour {
 	void UpdateScore() {
 		scoreText.text = string.Format(scoreTextFormat, this.score);
 		scoreEndText.text = string.Format(scoreEndTextFormat, this.score);
+
+		ScoreManager.SetFinalScore(this.score);
 	}
+
 }
