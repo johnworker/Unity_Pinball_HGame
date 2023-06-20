@@ -14,6 +14,7 @@ public class ObstacleGenerator : MonoBehaviour
 
     private int obstacleCount = 0;          // 已生成的障礙物數量
 
+
     private void Start()
     {
         // 開始生成障礙物的協程
@@ -82,7 +83,7 @@ public class ObstacleGenerator : MonoBehaviour
     {
         // 添加碰撞器組件
         Collider obstacleCollider = obstacle.GetComponent<Collider>();
-        obstacleCollider.isTrigger = true;
+        // obstacleCollider.isTrigger = true;
 
         bool hasCollided = false;
 

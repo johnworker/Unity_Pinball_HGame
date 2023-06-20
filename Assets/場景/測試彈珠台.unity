@@ -2394,7 +2394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7541716b3bd1694fa12b23c350c0099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstaclePrefab: {fileID: 4560753612157238910, guid: 0bf288aa6864fd14494a7841794911db, type: 3}
+  obstaclePrefab: {fileID: 8580338466972316062, guid: 7834b41c7927bb24ead06f169bcb628e, type: 3}
   generationInterval: 10
   spawnSize: {x: 8, y: 0.1, z: 7}
   canSpawnTotal: 10

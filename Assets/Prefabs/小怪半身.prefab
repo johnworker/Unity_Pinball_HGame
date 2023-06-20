@@ -2179,7 +2179,7 @@ GameObject:
   - component: {fileID: 1541258090}
   - component: {fileID: 1541258091}
   - component: {fileID: 1541258092}
-  - component: {fileID: -7133573452259449193}
+  - component: {fileID: 517345754}
   m_Layer: 0
   m_Name: "\u5C0F\u602A\u534A\u8EAB"
   m_TagString: "\u969C\u7919\u7269"
@@ -2262,19 +2262,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af22f74e36ab2d54d979a9eeee9d4d25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-7133573452259449193
-MonoBehaviour:
+  ani: {fileID: 517345754}
+  parHurtMove: "\u53D7\u50B7"
+--- !u!95 &517345754
+Animator:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4560753612157238910}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 123ec62e4ec91ec4d881a9710706e7cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hasCollided: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5b2a35fa8fcb6d14c9b467b37a91821c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4666238146872231018
 GameObject:
   m_ObjectHideFlags: 0
