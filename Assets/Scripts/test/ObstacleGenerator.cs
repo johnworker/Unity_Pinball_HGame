@@ -130,7 +130,7 @@ public class ObstacleGenerator : MonoBehaviour
         {
             rotateT += Time.deltaTime / rotateDuration;
             obstacle.transform.rotation = Quaternion.Slerp(currentRot, targetRot, rotateT);
-            yield return null;
+            //yield return null;
         }
 
     }
