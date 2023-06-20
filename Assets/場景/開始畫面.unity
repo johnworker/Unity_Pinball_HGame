@@ -789,7 +789,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863c3528da581fe42a153e27472628ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isActive: 0
+  scoreEndText: {fileID: 0}
+  scoreEndTextFormat: 'Final Score: {0}'
 --- !u!1 &1753760597
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,7 +1048,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 817b2cd8f760a834bbdfc99a39982ffd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ab2408defee404a469f9da4dca813395, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
