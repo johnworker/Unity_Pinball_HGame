@@ -35,7 +35,7 @@ ModelImporter:
     - serializedVersion: 16
       name: "\u7B49\u5F85"
       takeName: metarig|metarigAction.001
-      internalID: -2463781497245029270
+      internalID: 5692447970909098836
       firstFrame: 0
       lastFrame: 40
       wrapMode: 0
@@ -43,7 +43,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
-      hasAdditiveReferencePose: 1
+      hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 0
@@ -64,7 +64,7 @@ ModelImporter:
     - serializedVersion: 16
       name: "\u53D7\u50B7"
       takeName: metarig|metarigAction.001
-      internalID: 3536513432961602234
+      internalID: 1423694885673311588
       firstFrame: 60
       lastFrame: 100
       wrapMode: 0
@@ -72,7 +72,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
-      hasAdditiveReferencePose: 1
+      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
