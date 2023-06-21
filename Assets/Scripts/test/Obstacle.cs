@@ -1,36 +1,73 @@
+ï»¿using System.Collections;
 using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-    private int hitCount = 0; // °O¿ı³Q¥´ªº¦¸¼Æ
+    private int hitCount = 0; // è¨˜éŒ„è¢«æ‰“çš„æ¬¡æ•¸
 
 
-    [Header("°Êµe±±¨î¾¹")]
+    [Header("å‹•ç•«æ§åˆ¶å™¨")]
     public Animator ani;
-    [Header("¨ü¶Ë·n°Ê°Ñ¼Æ")]
-    public string parHurtMove = "¨ü¶Ë";
+    [Header("å—å‚·æ–å‹•åƒæ•¸")]
+    public string parHurtMove = "å—å‚·";
+    public float waitDuration = 1f; // ç­‰å¾…å‹•ç•«æ’­æ”¾æ™‚é–“
 
+    [Header("å—å‚·æè³ª")]
+    public Material hurtMaterial;
 
     private void OnCollisionEnter(Collision collision)
     {
-        // ÀË´ú¨ì¸I¼²ªº¹ï¹³¬O²y®É
+        // æª¢æ¸¬åˆ°ç¢°æ’çš„å°åƒæ˜¯çƒæ™‚
         if (collision.gameObject.CompareTag("Ball"))
         {
             // Destroy(gameObject);
 
             ani.SetBool(parHurtMove, true);
-            hitCount++; // ¼W¥[³Q¥´ªº¦¸¼Æ
-            
-            // ¦pªG³Q¥´¦¸¼Æ¹F¨ì3¦¸¡A«h¾P·´»ÙÃªª«
+            hitCount++; // å¢åŠ è¢«æ‰“çš„æ¬¡æ•¸
+            TakeDamage();
+
+            // å¦‚æœè¢«æ‰“æ¬¡æ•¸é”åˆ°3æ¬¡ï¼Œå‰‡éŠ·æ¯€éšœç¤™ç‰©
             if (hitCount >= 3)
             {
-                Destroy(gameObject);
+                DestroyObstacle();
             }
-            
+            else
+            {
+                // ç¹¼çºŒæ’­æ”¾ç­‰å¾…å‹•ç•«
+                StartCoroutine(WaitAndContinueAnimation());
+            }
         }
-        else
+    }
+
+    private IEnumerator WaitAndContinueAnimation()
+    {
+        // ç­‰å¾…æŒ‡å®šçš„æ™‚é–“
+        yield return new WaitForSeconds(waitDuration);
+
+        // åœæ­¢å—å‚·å‹•ç•«
+        ani.SetBool(parHurtMove, false);
+    }
+
+    private void DestroyObstacle()
+    {
+        // åœ¨æ­¤è™•åŸ·è¡ŒéŠ·æ¯€éšœç¤™ç‰©çš„æ“ä½œ
+        Destroy(gameObject);
+    }
+
+    private void TakeDamage()
+    {
+        // ç²å–æ¨¡å‹çš„æ‰€æœ‰æ¸²æŸ“å™¨çµ„ä»¶
+        Renderer[] renderers = GetComponentsInChildren<Renderer>();
+
+        // éæ­·æ‰€æœ‰æ¸²æŸ“å™¨ï¼Œè¨­ç½®æè³ªç‚ºå—å‚·æè³ª
+        foreach (Renderer renderer in renderers)
         {
-            ani.SetBool(parHurtMove, false);
+            Material[] materials = renderer.materials;
+            for (int i = 0; i < materials.Length; i++)
+            {
+                materials[i] = hurtMaterial;
+            }
+            renderer.materials = materials;
         }
     }
 }

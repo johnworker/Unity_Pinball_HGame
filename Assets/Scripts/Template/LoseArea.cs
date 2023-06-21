@@ -19,7 +19,7 @@ public class LoseArea : MonoBehaviour {
 			Destroy(ball.gameObject);
 
 			// 有時 摧毀 足夠快，有時又不夠快
-			Game.instance.CheckGameState();
+			//Game.instance.CheckGameState();
 			StartCoroutine(UpdateGame());
 		}
 	}
@@ -28,6 +28,7 @@ public class LoseArea : MonoBehaviour {
 	/// 由於 Destroy(...) 速度較慢，一幀後調用 CheckGameState
 	/// </summary>
 	/// <returns></returns>
+
 	IEnumerator UpdateGame() {
 		yield return null;
 
