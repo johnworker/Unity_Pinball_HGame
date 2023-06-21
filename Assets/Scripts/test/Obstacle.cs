@@ -15,6 +15,9 @@ public class Obstacle : MonoBehaviour
     [Header("受傷材質")]
     public Material hurtMaterial;
 
+    [Header("原始材質")]
+    private Material[] originalMaterials;
+
     private void OnCollisionEnter(Collision collision)
     {
         // 檢測到碰撞的對像是球時
@@ -46,6 +49,14 @@ public class Obstacle : MonoBehaviour
 
         // 停止受傷動畫
         ani.SetBool(parHurtMove, false);
+
+        // 恢復模型的原始材質
+        Renderer[] renderers = GetComponentsInChildren<Renderer>();
+
+        for (int i = 0; i < renderers.Length; i++)
+        {
+            renderers[i].material = originalMaterials[i];
+        }
     }
 
     private void DestroyObstacle()
@@ -59,12 +70,15 @@ public class Obstacle : MonoBehaviour
         // 獲取模型的所有渲染器組件
         Renderer[] renderers = GetComponentsInChildren<Renderer>();
 
+        originalMaterials = new Material[renderers.Length];
+
         // 遍歷所有渲染器，設置材質為受傷材質
         foreach (Renderer renderer in renderers)
         {
             Material[] materials = renderer.materials;
             for (int i = 0; i < materials.Length; i++)
             {
+                originalMaterials[i] = renderers[i].material;
                 materials[i] = hurtMaterial;
             }
             renderer.materials = materials;
