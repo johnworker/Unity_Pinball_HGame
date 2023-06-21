@@ -12,12 +12,6 @@ public class Obstacle : MonoBehaviour
     public string parHurtMove = "受傷";
     public float waitDuration = 1f; // 等待動畫播放時間
 
-    [Header("受傷材質")]
-    public Material hurtMaterial;
-
-    [Header("原始材質")]
-    private Material[] originalMaterials;
-
     private void OnCollisionEnter(Collision collision)
     {
         // 檢測到碰撞的對像是球時
@@ -27,7 +21,6 @@ public class Obstacle : MonoBehaviour
 
             ani.SetBool(parHurtMove, true);
             hitCount++; // 增加被打的次數
-            TakeDamage();
 
             // 如果被打次數達到3次，則銷毀障礙物
             if (hitCount >= 3)
@@ -50,39 +43,12 @@ public class Obstacle : MonoBehaviour
         // 停止受傷動畫
         ani.SetBool(parHurtMove, false);
 
-        // 恢復模型的原始材質
-        Renderer[] renderers = GetComponentsInChildren<Renderer>();
-
-        for (int i = 0; i < renderers.Length; i++)
-        {
-            renderers[i].material = originalMaterials[i];
-        }
     }
 
     private void DestroyObstacle()
     {
         // 在此處執行銷毀障礙物的操作
         Destroy(gameObject);
-    }
-
-    private void TakeDamage()
-    {
-        // 獲取模型的所有渲染器組件
-        Renderer[] renderers = GetComponentsInChildren<Renderer>();
-
-        originalMaterials = new Material[renderers.Length];
-
-        // 遍歷所有渲染器，設置材質為受傷材質
-        foreach (Renderer renderer in renderers)
-        {
-            Material[] materials = renderer.materials;
-            for (int i = 0; i < materials.Length; i++)
-            {
-                originalMaterials[i] = renderers[i].material;
-                materials[i] = hurtMaterial;
-            }
-            renderer.materials = materials;
-        }
     }
 }
 
