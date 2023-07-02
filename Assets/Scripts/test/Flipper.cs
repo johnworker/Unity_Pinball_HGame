@@ -1,49 +1,49 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class Flipper : MonoBehaviour
 {
-    [Header("¼uÂ®ªº­ì©l¦ì¸m")]
+    [Header("å½ˆç°§çš„åŸå§‹ä½ç½®")]
     public float restPosition = 0f;
-    [Header("¼uÂ®À£¤Uªº¦ì¸m")]
+    [Header("å½ˆç°§å£“ä¸‹çš„ä½ç½®")]
     public float pressedPosition = 45f;
-    [Header("¼uÂ®ªº¼uÂ®¥´À»¤O«×")]
+    [Header("å½ˆç°§çš„å½ˆç°§æ‰“æ“ŠåŠ›åº¦")]
     public float hitStrenght = 10000f;
-    [Header("¼uÂ®ªº¾×ªO±±¨î¾¹¡A¥Î©ó´î½w¼uÂ®ªº¹B°Ê")]
+    [Header("å½ˆç°§çš„æ“‹æ¿æ§åˆ¶å™¨ï¼Œç”¨æ–¼æ¸›ç·©å½ˆç°§çš„é‹å‹•")]
     public float flipperDamper = 150f;
 
     private HingeJoint hinge;
-    [Header("¿é¤J¦WºÙ")]
+    [Header("è¼¸å…¥åç¨±")]
     public string inputName;
 
     void Start()
     {
         hinge = GetComponent<HingeJoint>();
-        // ¦XÃì±µÀY.¨Ï¥Î¼uÂ® = ¶}±Ò;
+        // åˆéˆæ¥é ­.ä½¿ç”¨å½ˆç°§ = é–‹å•Ÿ;
         hinge.useSpring = true;
     }
 
     void Update()
     {
         JointSpring spring = new JointSpring();
-        // ©w¸q¼uÂ®ªº¼uÂ®¥´À»¤O«×
+        // å®šç¾©å½ˆç°§çš„å½ˆç°§æ‰“æ“ŠåŠ›åº¦
         spring.spring = hitStrenght;
-        // ©w¸q¼uÂ®ªº¾×ªO±±¨î¾¹
+        // å®šç¾©å½ˆç°§çš„æ“‹æ¿æ§åˆ¶å™¨
         spring.damper = flipperDamper;
 
         if(Input.GetAxis(inputName) == 1)
         {
             print(inputName);
-            // ¼uÂ®ªº¥Ø¼Ğ¦ì¸m = À£¤O¦ì¸m
+            // å½ˆç°§çš„ç›®æ¨™ä½ç½® = å£“åŠ›ä½ç½®
             spring.targetPosition = pressedPosition;
             Debug.Log(pressedPosition);
         }
         else
         {
-            // ¼uÂ®ªº¥Ø¼Ğ¦ì¸m = «ì´_¦ì¸m
+            // å½ˆç°§çš„ç›®æ¨™ä½ç½® = æ¢å¾©ä½ç½®
             spring.targetPosition = restPosition;
         }
 
-        // À³¥Î¼uÂ®¨ìHingeJoint²Õ¥ó
+        // æ‡‰ç”¨å½ˆç°§åˆ°HingeJointçµ„ä»¶
         hinge.spring = spring;
         hinge.useLimits = true;
     }

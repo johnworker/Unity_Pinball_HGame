@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,6 +11,6 @@ public class Score : MonoBehaviour
     void ShowTotalScore()
     {
         int totalScore = gameScore.score;
-        // ¨Ï¥ÎÁ`¤À¶i¦æ«áÄò¾Ş§@
+        // ä½¿ç”¨ç¸½åˆ†é€²è¡Œå¾ŒçºŒæ“ä½œ
     }
 }

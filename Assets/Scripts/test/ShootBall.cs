@@ -1,10 +1,10 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ShootBall : MonoBehaviour
 {
-    [Header("¤O¶q")]
+    [Header("åŠ›é‡")]
     public float force = 100.0f;
     public string buttonName = "Fire1";
 
@@ -13,7 +13,7 @@ public class ShootBall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // ¦pªG ¿é¤J«ö¶s(buttonName)
+        // å¦‚æœ è¼¸å…¥æŒ‰éˆ•(buttonName)
         if (Input.GetButtonDown(buttonName))
         {
             foreach (Rigidbody ball in ballList)

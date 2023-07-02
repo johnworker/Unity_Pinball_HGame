@@ -1,31 +1,31 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ApplyForceAtOffet : MonoBehaviour
 {
-    [Header("¤O¶q")]
+    [Header("åŠ›é‡")]
     public float force = 100.0f;
-    [Header("¤O¶q¤è¦V")]
+    [Header("åŠ›é‡æ–¹å‘")]
     public Vector3 forceDirection = Vector3.forward;
 
-    [Header("«ö¶s¦WºÙ")]
+    [Header("æŒ‰éˆ•åç¨±")]
     public string buttonName = "Fire1";
-    [Header("°¾²¾¸ô®|")]
+    [Header("åç§»è·¯å¾‘")]
     public Vector3 offset;
 
 
     void Update()
     {
-        // ¿é¤J«ö¶s
+        // è¼¸å…¥æŒ‰éˆ•
         if (Input.GetButton(buttonName))
         {
-            // ¨ú±o­èÅé.²K¥[±À¤O¤è¦ì(¤O¶q¤è¦V.Âk¤@¤Æ * ¤O¶q, ¤è¦ì + °¾²¾)
+            // å–å¾—å‰›é«”.æ·»åŠ æ¨åŠ›æ–¹ä½(åŠ›é‡æ–¹å‘.æ­¸ä¸€åŒ– * åŠ›é‡, æ–¹ä½ + åç§»)
             GetComponent<Rigidbody>().AddForceAtPosition(forceDirection.normalized * force, transform.position + offset);
         }
         else
         {
-            // ¨ú±o­èÅé.²K¥[±À¤O¤è¦ì(¤O¶q¤è¦V.Âk¤@¤Æ * -¤O¶q, ¤è¦ì + °¾²¾)
+            // å–å¾—å‰›é«”.æ·»åŠ æ¨åŠ›æ–¹ä½(åŠ›é‡æ–¹å‘.æ­¸ä¸€åŒ– * -åŠ›é‡, æ–¹ä½ + åç§»)
             GetComponent<Rigidbody>().AddForceAtPosition(forceDirection.normalized * -force, transform.position + offset);
         }
     }
