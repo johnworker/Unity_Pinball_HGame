@@ -2283,7 +2283,7 @@ MonoBehaviour:
   obstaclePrefab: {fileID: 6146714264416098927, guid: 0bf288aa6864fd14494a7841794911db, type: 3}
   generationInterval: 20
   spawnSize: {x: 8, y: 0.1, z: 7}
-  canSpawnTotal: 10
+  canSpawnTotal: 3
   moveDuration: 5
   moveRange: 1
 --- !u!1 &705507993
@@ -2630,6 +2630,19 @@ MonoBehaviour:
   waitDuration: 1
   waitDurationChangeAni: 5
   canHitCountNumbers: 20
+--- !u!114 &733226231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733226224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a169bbf9cf5db1d439e878ab255e8bb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 500
 --- !u!1 &789939517
 GameObject:
   m_ObjectHideFlags: 0
