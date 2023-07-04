@@ -15,7 +15,9 @@ public class Ball : MonoBehaviour {
 	/// 給球加一個瞬間力
 	/// </summary>
 	/// <param name="force"></param>
-	public void AddForce(Vector3 force) {
+	public void AddForce(Vector3 force) 
+	{
 		rigidBody.AddForce(force, ForceMode.VelocityChange);
+		// 使rigidBody跟著移動旋轉
 	}
 }
