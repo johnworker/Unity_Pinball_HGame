@@ -2418,7 +2418,7 @@ MonoBehaviour:
   menuPanel: {fileID: 818831535}
   gamePanel: {fileID: 1910870287}
   endPanel: {fileID: 1001957147}
-  ballStartCount: 1
+  ballStartCount: 3
   ballDisplay: {fileID: 1193190341}
   ballPrefab: {fileID: 114490561531822830, guid: fec322a09db1d494e8746a6d7030bf27, type: 3}
   ballSpawnPoint: {fileID: 1443309768}
