@@ -96,7 +96,7 @@ public class BossState : MonoBehaviour
 
 
         // 等待動畫完成
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(0.4f);
 
         // 播放站立等待動畫
         ani.SetBool(parStandIdle, true);
