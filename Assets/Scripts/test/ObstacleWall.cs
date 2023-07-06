@@ -7,8 +7,6 @@ public class ObstacleWall : MonoBehaviour
     public float delay = 3f;
     [Header("升起/下降的持续时间")]
     public float duration = 1f;
-    [Header("障碍物墙壁")]
-    public GameObject wallTrap;
     [Header("障碍物墙壁的Transform组件")]
     public Transform wallTransform;
     [Header("陷阱預定移動點")]
@@ -26,7 +24,7 @@ public class ObstacleWall : MonoBehaviour
         targetPosition = trapTransform.position;    // 升起的目标位置为地板的位置
     }
 
-    private void Update()
+    private void Start()
     {
         StartCoroutine(ObstacleRoutine());
     }
