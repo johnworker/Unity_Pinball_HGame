@@ -2405,6 +2405,7 @@ MonoBehaviour:
   moveDistance: 6.5
   moveSpeed: 0.05
   interval: 2.5
+  wallMaterial: {fileID: 2100000, guid: 83767bfac2ee43c4fb440ff0816a4868, type: 2}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0

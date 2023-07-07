@@ -6,6 +6,8 @@ public class MovingWall : MonoBehaviour
     public float moveSpeed = 2f;     // 墙壁移动的速度
     public float interval = 10f;      // 移动的时间间隔
 
+    public Material wallMaterial;    // 墙壁使用的材质
+
     private float originalY;         // 原始的Y坐标
     private float targetY;           // 目标的Y坐标
     private float timer;             // 计时器
@@ -33,5 +35,11 @@ public class MovingWall : MonoBehaviour
         // 平滑移动墙壁
         float newY = Mathf.Lerp(transform.position.y, targetY, moveSpeed * Time.deltaTime);
         transform.position = new Vector3(transform.position.x, newY, transform.position.z);
+
+        // 计算材质偏移值
+        float textureOffsetY = (newY - originalY) / moveDistance;
+
+        // 应用材质偏移值
+        wallMaterial.mainTextureOffset = new Vector2(0f, textureOffsetY);
     }
 }
