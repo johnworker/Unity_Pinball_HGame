@@ -2289,7 +2289,7 @@ MonoBehaviour:
   obstaclePrefab: {fileID: 6146714264416098927, guid: 0bf288aa6864fd14494a7841794911db, type: 3}
   generationInterval: 20
   spawnSize: {x: 8, y: 0.1, z: 7}
-  canSpawnTotal: 3
+  canSpawnTotal: 2
   moveDuration: 5
   moveRange: 1
 --- !u!1 &696051001
@@ -2383,7 +2383,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696051001}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.17024174, y: -0.31072527, z: 1.4034729}
+  m_LocalPosition: {x: 0.17024174, y: -0.25, z: 1.4034729}
   m_LocalScale: {x: 0.1, y: 0.39999998, z: 1.9067076}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2399,13 +2399,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 696051001}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f956fc1c5f623134496dc8f4ee389e37, type: 3}
+  m_Script: {fileID: 11500000, guid: e6d5fb0972e92cb4a890578b79276ae9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 1
-  duration: 0.5
-  wallTransform: {fileID: 696051005}
-  trapTransform: {fileID: 1324029743}
+  moveDistance: 6.5
+  moveSpeed: 0.05
+  interval: 2.5
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -4121,7 +4120,6 @@ GameObject:
   - component: {fileID: 1324029747}
   - component: {fileID: 1324029746}
   - component: {fileID: 1324029745}
-  - component: {fileID: 1324029744}
   m_Layer: 0
   m_Name: "\u9677\u9631\u7246\u5B9A\u9EDE"
   m_TagString: Untagged
@@ -4144,22 +4142,6 @@ Transform:
   m_Father: {fileID: 251243199}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &1324029744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1324029742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f956fc1c5f623134496dc8f4ee389e37, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delay: 1
-  duration: 0.5
-  wallTransform: {fileID: 1324029743}
-  trapTransform: {fileID: 0}
 --- !u!23 &1324029745
 MeshRenderer:
   m_ObjectHideFlags: 0
