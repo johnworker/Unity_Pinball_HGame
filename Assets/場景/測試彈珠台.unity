@@ -588,7 +588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveDistance: 0.7
   moveSpeed: 2
-  interval: 3
+  interval: 5
 --- !u!65 &141861598
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2799,7 +2799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveDistance: 0.7
   moveSpeed: 2
-  interval: 3
+  interval: 5
 --- !u!65 &743593573
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3535,7 +3535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveDistance: 0.7
   moveSpeed: 2
-  interval: 3
+  interval: 5
 --- !u!65 &1088244373
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4665,7 +4665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveDistance: 0.7
   moveSpeed: 2
-  interval: 3
+  interval: 5
 --- !u!65 &1417109449
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5602,7 +5602,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1699265349
 AudioSource:
   m_ObjectHideFlags: 0
