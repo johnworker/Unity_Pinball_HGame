@@ -19,14 +19,6 @@ public class Game : MonoBehaviour {
 	[Header("遊戲是否處於活動狀態")]
 	public TextMeshProUGUI ballCountText;
 
-	[Header("遊戲 UI")]
-	[Header("遊戲中的選單")]
-	public RectTransform menuPanel;
-	[Header("遊戲畫面")]
-	public RectTransform gamePanel;
-	[Header("結束畫面")]
-	public RectTransform endPanel;
-
 	[Header("彈珠")]
 	[Header("初始彈珠數量")]
 	public int ballStartCount = 3;
@@ -41,8 +33,6 @@ public class Game : MonoBehaviour {
 	public GameScore score { get; private set; }
 	// 用於控制遊戲的行為
 	public GameController controller { get; private set; }
-	[Header("表示其他的 Canvas（畫布）")]
-	public GameObject otherCanvas;
 
 	void Awake() {
 		instance = this;
@@ -70,12 +60,6 @@ public class Game : MonoBehaviour {
 
 		SetBallReady(true);
 
-		// 顯示右側的 UI 面板
-		menuPanel.gameObject.SetActive(true);
-		gamePanel.gameObject.SetActive(true);
-		endPanel.gameObject.SetActive(false);
-
-		otherCanvas.SetActive(false);
 	}
 	/*
 	 * 在 Start() 方法中，首先將 isActive 屬性設置為 false，表示遊戲目前不處於活動狀態。
@@ -101,12 +85,6 @@ public class Game : MonoBehaviour {
 
 		score.ClearScore();
 
-		// 隱藏右側面板
-		menuPanel.gameObject.SetActive(false);
-		gamePanel.gameObject.SetActive(true);
-		endPanel.gameObject.SetActive(false);
-
-		otherCanvas.SetActive(false);
 	}
 
 	/// <summary>
@@ -115,14 +93,6 @@ public class Game : MonoBehaviour {
 	public void EndGame() {
 
 		isActive = false;
-
-		otherCanvas.SetActive(false);
-
-
-		// 隱藏右側面板
-		menuPanel.gameObject.SetActive(false);
-		gamePanel.gameObject.SetActive(false);
-		endPanel.gameObject.SetActive(false);
 
 		SceneManager.LoadScene("結束畫面選單");
 	}
