@@ -6413,6 +6413,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -4777904132360443520, guid: 488d98880b39db2409bfd98cc1b4550f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 283486814294556523, guid: 488d98880b39db2409bfd98cc1b4550f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 754bde70d3b44364cbce999282950758, type: 2}
     - target: {fileID: 919132149155446097, guid: 488d98880b39db2409bfd98cc1b4550f, type: 3}
       propertyPath: m_Name
       value: "\u78E8\u574A"
