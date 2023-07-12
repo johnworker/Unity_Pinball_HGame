@@ -11,7 +11,8 @@ public class MovingWall : MonoBehaviour
     private float timer;             // 計時器
     private bool movingUp = true;    // 是否向上移動
 
-    private void Start()
+
+    private void Awake()
     {
         originalY = transform.position.y;  // 記錄原始的Y坐標
         targetY = (originalY + moveDistance) * moveSpeed * Time.deltaTime; // 設置初始目標位置為原始位置加上移動距離
@@ -19,6 +20,7 @@ public class MovingWall : MonoBehaviour
 
     private void Update()
     {
+
         // 計時器隨著時間增加並依時間影格分配每個裝置
         timer += Time.deltaTime;
 
