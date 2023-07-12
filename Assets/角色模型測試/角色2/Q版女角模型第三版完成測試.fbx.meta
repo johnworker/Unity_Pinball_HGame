@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f6ba1312d55a67a43b85d27c99e767e4
+guid: af473fd0f493e704aad30c659d15e14d
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -68,38 +68,9 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: "\u7AD9\u7ACB\u7B49\u5F85"
-      takeName: "\u9AA8\u67B6|\u9AA8\u67B6Action"
-      internalID: -4139047674318071871
-      firstFrame: 160
-      lastFrame: 200
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: "\u8DB4\u4E0B"
+      name: "\u89D2\u8272\u8DB4\u4E0B"
       takeName: "\u9AA8\u67B6Action"
-      internalID: -3664622385993880393
+      internalID: 7231656201509087100
       firstFrame: 0
       lastFrame: 40
       wrapMode: 0
@@ -127,8 +98,8 @@ ModelImporter:
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: "\u8DB4\u4E0B\u7B49\u5F85"
-      takeName: "\u9AA8\u67B6Action"
-      internalID: -5907256089558316044
+      takeName: "\u9AA8\u67B6|\u9AA8\u67B6Action"
+      internalID: -4139047674318071871
       firstFrame: 40
       lastFrame: 80
       wrapMode: 0
@@ -156,8 +127,8 @@ ModelImporter:
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: "\u6062\u5FA9\u7AD9\u7ACB\u59FF\u52E2"
-      takeName: "\u9AA8\u67B6Action"
-      internalID: -4110557168841904363
+      takeName: "\u9AA8\u67B6|\u9AA8\u67B6Action"
+      internalID: 2123335611580012557
       firstFrame: 80
       lastFrame: 90
       wrapMode: 0
@@ -185,8 +156,8 @@ ModelImporter:
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: "\u7AD9\u7ACB\u53D7\u50B7"
-      takeName: "\u9AA8\u67B6Action"
-      internalID: -2929851758126759023
+      takeName: "\u9AA8\u67B6|\u9AA8\u67B6Action"
+      internalID: -8029550767482142865
       firstFrame: 100
       lastFrame: 150
       wrapMode: 0
@@ -213,10 +184,68 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
+      name: "\u7AD9\u7ACB\u7B49\u5F85"
+      takeName: "\u9AA8\u67B6|\u9AA8\u67B6Action"
+      internalID: 2539496682695197523
+      firstFrame: 160
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
       name: "\u8DB4\u4E0B\u53D7\u50B7"
       takeName: "\u9AA8\u67B6|\u9AA8\u67B6Action"
-      internalID: -2958114332781005900
+      internalID: 1729779468073442911
       firstFrame: 220
+      lastFrame: 270
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: "\u9AA8\u67B6|\u9AA8\u67B6Action"
+      takeName: "\u9AA8\u67B6|\u9AA8\u67B6Action"
+      internalID: -2326464108550275966
+      firstFrame: 0
       lastFrame: 270
       wrapMode: 0
       orientationOffsetY: 0

@@ -36,4 +36,5 @@ public class MovingWall : MonoBehaviour
         transform.position = new Vector3(transform.position.x, newY, transform.position.z);
 
     }
+
 }
