@@ -5,7 +5,7 @@ using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
-    public TextMeshProUGUI scoreText; // 分數的UI文本
+    // public Text scoreText; // 分數的UI文本
 
     private int originalScore = 0;
 
