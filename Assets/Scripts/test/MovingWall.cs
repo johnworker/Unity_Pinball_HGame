@@ -16,6 +16,7 @@ public class MovingWall : MonoBehaviour
     {
         originalY = transform.position.y;  // 記錄原始的Y坐標
         targetY = (originalY + moveDistance) * moveSpeed * Time.deltaTime; // 設置初始目標位置為原始位置加上移動距離
+
     }
 
     private void Update()
