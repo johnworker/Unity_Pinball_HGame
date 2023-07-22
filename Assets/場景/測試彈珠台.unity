@@ -16342,9 +16342,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7334780971043522846, guid: 96f2d77ae281c2a4c8bf5719e72c01a6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 96f2d77ae281c2a4c8bf5719e72c01a6, type: 3}
       propertyPath: m_Name
       value: "\u57FA\u672CQ\u7248\u6A21\u578B\u96D9\u89D2\u8272\u52D5\u756B"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176348123359038692, guid: 96f2d77ae281c2a4c8bf5719e72c01a6, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176348123359038692, guid: 96f2d77ae281c2a4c8bf5719e72c01a6, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176348123359038692, guid: 96f2d77ae281c2a4c8bf5719e72c01a6, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176348123359038692, guid: 96f2d77ae281c2a4c8bf5719e72c01a6, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176348123359038692, guid: 96f2d77ae281c2a4c8bf5719e72c01a6, type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176348123359038692, guid: 96f2d77ae281c2a4c8bf5719e72c01a6, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176348123359038692, guid: 96f2d77ae281c2a4c8bf5719e72c01a6, type: 3}
+      propertyPath: m_SkinnedMotionVectors
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96f2d77ae281c2a4c8bf5719e72c01a6, type: 3}
