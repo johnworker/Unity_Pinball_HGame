@@ -3,7 +3,42 @@ guid: 488d98880b39db2409bfd98cc1b4550f
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6750\u8CEA.034"
+    second: {fileID: 2100000, guid: 754bde70d3b44364cbce999282950758, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6750\u8CEA.035"
+    second: {fileID: 2100000, guid: 754bde70d3b44364cbce999282950758, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6750\u8CEA.036"
+    second: {fileID: 2100000, guid: 754bde70d3b44364cbce999282950758, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6750\u8CEA.037"
+    second: {fileID: 2100000, guid: 754bde70d3b44364cbce999282950758, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6750\u8CEA.038"
+    second: {fileID: 2100000, guid: 754bde70d3b44364cbce999282950758, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6750\u8CEA.039"
+    second: {fileID: 2100000, guid: 754bde70d3b44364cbce999282950758, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6750\u8CEA.040"
+    second: {fileID: 2100000, guid: 754bde70d3b44364cbce999282950758, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -33,10 +68,39 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: "\u98A8\u8ECA\u65CB\u8F49"
+      name: "\u98A8\u8ECA\u975C\u6B62"
       takeName: "\u5E73\u9762|\u5E73\u9762Action.001"
       internalID: 856175312351638885
       firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: "\u98A8\u8ECA\u8F49\u52D5"
+      takeName: "\u5E73\u9762|\u5E73\u9762Action.001"
+      internalID: -6727266712342513910
+      firstFrame: 20
       lastFrame: 100
       wrapMode: 0
       orientationOffsetY: 0

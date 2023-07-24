@@ -8,7 +8,7 @@ public class BossState : MonoBehaviour
     public Animator ani;
     [Header("敵人角色"),SerializeField]
     private GameObject BossGirl;
-
+    [Header("粉碎特效")]
     public GameObject crushEffect;
 
     [Header("趴下受傷搖動參數")]

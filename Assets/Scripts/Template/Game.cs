@@ -29,6 +29,8 @@ public class Game : MonoBehaviour {
 	[Header("彈珠生成的位置")]
 	public Transform ballSpawnPoint;
 
+
+
 	// 管理遊戲的分數
 	public GameScore score { get; private set; }
 	// 用於控制遊戲的行為
