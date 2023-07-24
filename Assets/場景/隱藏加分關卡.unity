@@ -3073,6 +3073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelDuration: 30
+  timerText: {fileID: 280414124}
 --- !u!4 &998604236
 Transform:
   m_ObjectHideFlags: 0
