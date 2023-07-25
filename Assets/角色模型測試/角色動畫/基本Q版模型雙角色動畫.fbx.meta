@@ -68,7 +68,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: "\u81C9\u90E8\u52D5\u756B"
+      name: "\u5973\u89D2\u81C9\u90E8\u52D5\u756B"
       takeName: "\u9AA8\u67B6Action"
       internalID: 7231656201509087100
       firstFrame: 0
@@ -97,7 +97,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: "\u5973\u89D2\u52D5\u4F5C"
+      name: "\u5973\u89D2\u52D5\u756B"
       takeName: "\u9AA8\u67B6|\u9AA8\u67B6Action.001"
       internalID: 4514621443675934803
       firstFrame: 0
@@ -126,7 +126,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: "\u7537\u89D2\u52D5\u4F5C"
+      name: "\u7537\u89D2\u52D5\u756B"
       takeName: "\u9AA8\u67B6.001|\u9AA8\u67B6.001Action"
       internalID: 2384543393226057831
       firstFrame: 0
