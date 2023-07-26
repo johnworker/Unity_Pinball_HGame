@@ -6,14 +6,25 @@ using TMPro;
 public class HiddenLevelTimer : MonoBehaviour
 {
     public float levelDuration = 30f; // 隐藏关卡的时长，单位为秒
+
     private float timer; // 当前倒计时时间
 
     [Header("顯示倒數計時文字")]
-    public TextMeshProUGUI timerText; 
+    public TextMeshProUGUI timerText;
+
+    private int hiddenLevelScore = 0; // 隐藏关卡得分
+
 
     private void Start()
     {
         timer = levelDuration;
+
+        // 获取隐藏关卡得分（这里假设HiddenLevelScore脚本是附加在当前物体上的）
+        HiddenLevelScore hiddenScore = GetComponent<HiddenLevelScore>();
+        if (hiddenScore != null)
+        {
+            hiddenLevelScore = hiddenScore.score;
+        }
     }
 
     private void Update()
@@ -42,6 +53,8 @@ public class HiddenLevelTimer : MonoBehaviour
 
     private void ReturnToOriginalScene()
     {
+        // 将隐藏关卡得分保存到PlayerPrefs中
+        PlayerPrefs.SetInt("隱藏加分關卡", hiddenLevelScore);
 
         // 加载原本场景
         SceneManager.LoadScene("測試彈珠台");
