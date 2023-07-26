@@ -15,17 +15,14 @@ public class GameScore : MonoBehaviour
 
     private void Awake()
     {
-        // 读取PlayerPrefs中的隐藏关卡得分，并合并到当前得分
-        int hiddenLevelScore = PlayerPrefs.GetInt("隱藏加分關卡", 0);
+        // 获取隐藏关卡得分并合并到当前得分
+        int hiddenLevelScore = PlayerPrefs.GetInt("HiddenLevelScore", 0);
         ReturnToMainScore(hiddenLevelScore);
 
         // 更新显示在游戏面板上
         UpdateScore();
     }
 
-    void Start()
-    {
-    }
 
     /// <summary>
     /// 将分数添加到当前分数
@@ -53,6 +50,9 @@ public class GameScore : MonoBehaviour
     {
         UpdateLevelScore();
         scoreText.text = string.Format(scoreTextFormat, this.score);
+        // 記錄儲存分數
+        // 游戏结束或切换场景时保存分数到玩家的偏好设置中
+        PlayerPrefs.SetInt("Score", this.score);
         scoreEndText.text = string.Format(scoreEndTextFormat, this.score);
 
         ScoreManager.SetFinalScore(this.score);

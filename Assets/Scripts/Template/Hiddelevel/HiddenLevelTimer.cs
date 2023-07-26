@@ -17,6 +17,8 @@ public class HiddenLevelTimer : MonoBehaviour
 
     private void Start()
     {
+        // 读取保存的分数
+        int savedScore = PlayerPrefs.GetInt("Score", 0);
         timer = levelDuration;
 
         // 获取隐藏关卡得分（这里假设HiddenLevelScore脚本是附加在当前物体上的）
@@ -53,10 +55,18 @@ public class HiddenLevelTimer : MonoBehaviour
 
     private void ReturnToOriginalScene()
     {
-        // 将隐藏关卡得分保存到PlayerPrefs中
-        PlayerPrefs.SetInt("隱藏加分關卡", hiddenLevelScore);
+        // 获取隐藏关卡得分并保存到主场景分数
+        int hiddenLevelScore = PlayerPrefs.GetInt("HiddenLevelScore", 0);
+        PlayerPrefs.SetInt("HiddenLevelScore", 0); // 清除隐藏关卡得分
 
-        // 加载原本场景
+        // 加载原始场景
         SceneManager.LoadScene("測試彈珠台");
+
+        // 将分数添加到主场景分数
+        GameScore gameScore = FindObjectOfType<GameScore>();
+        if (gameScore)
+        {
+            gameScore.AddScore(hiddenLevelScore);
+        }
     }
 }
