@@ -17,8 +17,7 @@ public class HiddenLevelTimer : MonoBehaviour
 
     private void Start()
     {
-        // 读取保存的分数
-        int savedScore = PlayerPrefs.GetInt("Score", 0);
+
         timer = levelDuration;
 
         // 获取隐藏关卡得分（这里假设HiddenLevelScore脚本是附加在当前物体上的）
