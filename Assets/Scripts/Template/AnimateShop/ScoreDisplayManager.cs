@@ -11,6 +11,6 @@ public class ScoreDisplayManager : MonoBehaviour
         int finalScore = ScoreManager.GetFinalScore();
 
         // 显示分数在UI文本组件上
-        scoreText.text = "Final Score: " + finalScore.ToString();
+        scoreText.text = "{累計ポイント}" + "最終スコア: " + finalScore.ToString();
     }
 }

@@ -7617,9 +7617,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   ballReady: 1
-  ballCount: 3
+  ballCount: 1
   ballCountText: {fileID: 2145087299}
-  ballStartCount: 3
+  ballStartCount: 1
   ballDisplay: {fileID: 1193190341}
   ballPrefab: {fileID: 114490561531822830, guid: fec322a09db1d494e8746a6d7030bf27, type: 3}
   ballSpawnPoint: {fileID: 1443309768}

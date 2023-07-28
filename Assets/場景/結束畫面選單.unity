@@ -1753,7 +1753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreEndText: {fileID: 146480819}
-  scoreEndTextFormat: 'Final Score: {0}'
+  scoreEndTextFormat: "\u6700\u7D42\u30B9\u30B3\u30A2: {0}"
 --- !u!1 &1753760597
 GameObject:
   m_ObjectHideFlags: 0
