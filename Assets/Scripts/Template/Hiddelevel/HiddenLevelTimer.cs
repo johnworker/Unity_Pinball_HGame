@@ -48,7 +48,7 @@ public class HiddenLevelTimer : MonoBehaviour
     private void UpdateTimerUI()
     {
         // 将倒计时时间转换为字符串格式，并显示在UI Text上
-        string timeString = string.Format("剩餘時間:{1:00}", Mathf.FloorToInt(timer / 60), Mathf.FloorToInt(timer % 60));
+        string timeString = string.Format("残り時間:{1:00}", Mathf.FloorToInt(timer / 60), Mathf.FloorToInt(timer % 60));
         timerText.text = timeString;
     }
 

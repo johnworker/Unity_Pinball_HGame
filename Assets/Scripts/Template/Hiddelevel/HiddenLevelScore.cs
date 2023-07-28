@@ -8,7 +8,7 @@ public class HiddenLevelScore : MonoBehaviour
 	public int score;
 
 	public TextMeshProUGUI scoreText;
-	public string scoreTextFormat = "Score: {0}";
+	public string scoreTextFormat = "スコア: {0}";
 
     private void Awake()
     {

@@ -8,10 +8,10 @@ public class GameScore : MonoBehaviour
     public int score { get; private set; }
 
     public TextMeshProUGUI scoreText;
-    public string scoreTextFormat = "Score: {0}";
+    public string scoreTextFormat = "スコア: {0}";
 
     public TextMeshProUGUI scoreEndText;
-    public string scoreEndTextFormat = "Final Score: {0}";
+    public string scoreEndTextFormat = "最終スコア: {0}";
 
     private void Awake()
     {

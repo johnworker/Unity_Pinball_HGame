@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class GameUI : MonoBehaviour
 {
     public TextMeshProUGUI scoreEndText;
-    public string scoreEndTextFormat = "Final Score: {0}";
+    public string scoreEndTextFormat = "æœ€çµ‚ã‚¹ã‚³ã‚¢: {0}";
 
 
     private void Start()
@@ -17,10 +17,10 @@ public class GameUI : MonoBehaviour
         scoreEndText.text = string.Format(scoreEndTextFormat, finalScore);
     }
 
-    // UI«ö¶sÄ²µo¹CÀ¸³õ´º¸ü¤J
+    // UIæŒ‰éˆ•è§¸ç™¼éŠæˆ²å ´æ™¯è¼‰å…¥
     public void StartGame()
     {
-        SceneManager.LoadScene("´ú¸Õ¼u¯]¥x");
+        SceneManager.LoadScene("æ¸¬è©¦å½ˆç å°");
 
         /*
         Scene otherScene = SceneManager.GetSceneByName("OtherScene");
@@ -32,9 +32,9 @@ public class GameUI : MonoBehaviour
             Game gameSet = obj.GetComponent<Game>();
             if (gameSet != null)
             {
-                // ³X°İ¥¬ªL­ÈÅÜ¶q
+                // è¨ªå•å¸ƒæ—å€¼è®Šé‡
                 bool otherBoolValue = gameSet.isActive;
-                // ¦b³o¸Ì¨Ï¥ÎotherBoolValue°µ§A·Q­nªº¾Ş§@
+                // åœ¨é€™è£¡ä½¿ç”¨otherBoolValueåšä½ æƒ³è¦çš„æ“ä½œ
 
                 otherBoolValue = true;
                 break;
@@ -47,6 +47,17 @@ public class GameUI : MonoBehaviour
 
     public void EndGame()
     {
-        SceneManager.LoadScene("¶}©lµe­±");
+        SceneManager.LoadScene("çµæŸç•«é¢é¸å–®");
     }
+
+    public void LoadAnimationScene()
+    {
+        SceneManager.LoadScene("å‹•ç•«å±•ç¤ºæ‰€");
+    }
+
+    public void PlayAnimationScene()
+    {
+        SceneManager.LoadScene("å‹•ç•«å±•ç¤º");
+    }
+
 }

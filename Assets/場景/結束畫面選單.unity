@@ -316,7 +316,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Final Score: 100002'
+  m_text: "\u6700\u7D42\u30B9\u30B3\u30A2: 100002"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2cc252a335b5cdf41a212903945bfb9a, type: 2}
   m_sharedMaterial: {fileID: -2085875215239369729, guid: 2cc252a335b5cdf41a212903945bfb9a, type: 2}
@@ -873,7 +873,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Game Over
+  m_text: "\u30B2\u30FC\u30E0\u30AA\u30FC\u30D0\u30FC"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2cc252a335b5cdf41a212903945bfb9a, type: 2}
   m_sharedMaterial: {fileID: -2085875215239369729, guid: 2cc252a335b5cdf41a212903945bfb9a, type: 2}
@@ -1171,7 +1171,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1671353093}
         m_TargetAssemblyTypeName: GameUI, Assembly-CSharp
-        m_MethodName: StartGame
+        m_MethodName: LoadAnimationScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1419,7 +1419,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Restart
+  m_text: "\u518D\u30B2\u30FC\u30E0"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2cc252a335b5cdf41a212903945bfb9a, type: 2}
   m_sharedMaterial: {fileID: -2085875215239369729, guid: 2cc252a335b5cdf41a212903945bfb9a, type: 2}
@@ -1554,7 +1554,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Animate
+  m_text: "\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2cc252a335b5cdf41a212903945bfb9a, type: 2}
   m_sharedMaterial: {fileID: -2085875215239369729, guid: 2cc252a335b5cdf41a212903945bfb9a, type: 2}

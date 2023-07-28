@@ -1122,7 +1122,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u5269\u9918\u6642\u9593\uFF1A00"
+  m_text: "\u6B8B\u308A\u6642\u9593\uFF1A00"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2cc252a335b5cdf41a212903945bfb9a, type: 2}
   m_sharedMaterial: {fileID: -2085875215239369729, guid: 2cc252a335b5cdf41a212903945bfb9a, type: 2}
@@ -3117,7 +3117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   scoreText: {fileID: 1391296755}
-  scoreTextFormat: 'Score: {0}'
+  scoreTextFormat: "\u30B9\u30B3\u30A2: {0}"
 --- !u!1 &1001957146
 GameObject:
   m_ObjectHideFlags: 0
@@ -4117,7 +4117,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u5206\u6578\uFF1A0"
+  m_text: "\u30B9\u30B3\u30A2\uFF1A0"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2cc252a335b5cdf41a212903945bfb9a, type: 2}
   m_sharedMaterial: {fileID: -2085875215239369729, guid: 2cc252a335b5cdf41a212903945bfb9a, type: 2}

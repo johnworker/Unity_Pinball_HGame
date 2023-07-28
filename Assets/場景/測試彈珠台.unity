@@ -4399,7 +4399,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Score: 1000000'
+  m_text: "\u30B9\u30B3\u30A2: 1000000"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2cc252a335b5cdf41a212903945bfb9a, type: 2}
   m_sharedMaterial: {fileID: -2085875215239369729, guid: 2cc252a335b5cdf41a212903945bfb9a, type: 2}
@@ -7654,9 +7654,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 453436159}
-  scoreTextFormat: 'Score: {0}'
+  scoreTextFormat: "\u30B9\u30B3\u30A2: {0}"
   scoreEndText: {fileID: 1499913826}
-  scoreEndTextFormat: 'Final Score: {0}'
+  scoreEndTextFormat: "\u6700\u7D42\u30B9\u30B3\u30A2: {0}"
 --- !u!4 &718441708
 Transform:
   m_ObjectHideFlags: 0
