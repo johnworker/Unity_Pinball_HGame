@@ -652,7 +652,7 @@ GameObject:
   - component: {fileID: 418044852}
   - component: {fileID: 418044851}
   m_Layer: 5
-  m_Name: Image
+  m_Name: "\u52D5\u756B\u9078\u55AE\u5E95\u5716"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1378,7 +1378,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80e40c53e9edf6541af0945b438b22ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 693511362}
+  currentScoreText: {fileID: 0}
+  currentScoreTextFormat: "\u7D2F\u8A08\u30DD\u30A4\u30F3\u30C8: {0}"
 --- !u!114 &718441710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2188,7 +2189,7 @@ GameObject:
   - component: {fileID: 1391296756}
   - component: {fileID: 1391296755}
   m_Layer: 5
-  m_Name: Score
+  m_Name: "\u7E3D\u5206"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
