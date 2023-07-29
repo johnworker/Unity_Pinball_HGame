@@ -5583,6 +5583,10 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 13400000, guid: 0e7e0eb32cd2a6f499328e0b79379c3d, type: 2}
+    - target: {fileID: 2370831708207693743, guid: 11da22d443d7ddd4a9af4d35e5cf935d, type: 3}
+      propertyPath: score
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 2840746198645529016, guid: 11da22d443d7ddd4a9af4d35e5cf935d, type: 3}
       propertyPath: m_RootOrder
       value: 4
