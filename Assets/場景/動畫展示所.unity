@@ -2128,7 +2128,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 718441710}
         m_TargetAssemblyTypeName: GameUI, Assembly-CSharp
-        m_MethodName: LoadAnimationScene
+        m_MethodName: PlayAnimationScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
