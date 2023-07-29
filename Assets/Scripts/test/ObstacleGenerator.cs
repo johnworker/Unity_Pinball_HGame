@@ -96,6 +96,11 @@ public class ObstacleGenerator : MonoBehaviour
         Quaternion startRot = obstacle.transform.rotation;
         Quaternion endRot = Quaternion.LookRotation(endPos - startPos, Vector3.up);
 
+        // 检查障碍物是否为空，或者已经被销毁
+        if (obstacle == null)
+        {
+            yield break; // 协程提前结束
+        }
 
         float t = 0f;
         while (t < 1f)
