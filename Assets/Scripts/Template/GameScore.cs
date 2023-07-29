@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
@@ -17,10 +19,11 @@ public class GameScore : MonoBehaviour
     {
         // 获取隐藏关卡得分并合并到当前得分
         int hiddenLevelScore = PlayerPrefs.GetInt("HiddenLevelScore", 0);
-        ReturnToMainScore(hiddenLevelScore);
+        AddScore(hiddenLevelScore);
 
         // 更新显示在游戏面板上
         UpdateScore();
+
     }
 
 
@@ -39,27 +42,29 @@ public class GameScore : MonoBehaviour
     /// </summary>
     public void ClearScore()
     {
-        score = 0;
-        UpdateScore();
+         score = 0;
+         UpdateScore();
     }
 
     /// <summary>
     /// 使用正確的格式更新分数 UI 元素
     /// </summary>
-    void UpdateScore()
+    public void UpdateScore()
     {
         UpdateLevelScore();
         scoreText.text = string.Format(scoreTextFormat, this.score);
+        scoreEndText.text = string.Format(scoreEndTextFormat, this.score);
+
         // 記錄儲存分數
         // 游戏结束或切换场景时保存分数到玩家的偏好设置中
-        SaveScore();
+
 
         ScoreManager.SetFinalScore(this.score);
     }
 
     public void SaveScore()
     {
-        PlayerPrefs.SetInt("TotalScore", score);
+        PlayerPrefs.SetInt("GameScore", this.score);
         PlayerPrefs.Save();
     }
 
@@ -80,4 +85,5 @@ public class GameScore : MonoBehaviour
             hiddenLevelScore.UpdateLevelScore();
         }
     }
+
 }

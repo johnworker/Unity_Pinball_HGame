@@ -10,17 +10,21 @@ public class HiddenLevelScore : MonoBehaviour
 	public TextMeshProUGUI scoreText;
 	public string scoreTextFormat = "スコア: {0}";
 
-    private void Awake()
+	private GameScore gameScore;
+
+
+	private void Awake()
     {
 		// 读取保存的分数
-		int savedScore = PlayerPrefs.GetInt("Score", 0);
+		PlayerPrefs.GetInt("GameScore", score);
+		UpdateLevelScore();
 	}
 
-    /// <summary>
-    /// 將分數添加到當前分數
-    /// </summary>
-    /// <param name="score">Amount</param>
-    public void AddScore(int score)
+	/// <summary>
+	/// 將分數添加到當前分數
+	/// </summary>
+	/// <param name="score">Amount</param>
+	public void AddScore(int score)
 	{
 		this.score += score;
 		UpdateLevelScore();
@@ -34,8 +38,8 @@ public class HiddenLevelScore : MonoBehaviour
 	/// </summary>
 	public void ClearScore()
 	{
-		score = 0;
-		UpdateLevelScore();
+		//score = 0;
+		//UpdateLevelScore();
 	}
 
 	/// <summary>

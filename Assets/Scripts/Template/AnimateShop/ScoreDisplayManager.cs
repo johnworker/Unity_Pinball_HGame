@@ -6,6 +6,7 @@ public class ScoreDisplayManager : MonoBehaviour
     public TextMeshProUGUI currentScoreText;
     public string currentScoreTextFormat = "累計ポイント: {0}";
 
+   
     void Start()
     {
         int totalScore = PlayerPrefs.GetInt("TotalScore", 0);

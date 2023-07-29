@@ -3067,7 +3067,6 @@ GameObject:
   - component: {fileID: 998604236}
   - component: {fileID: 998604235}
   - component: {fileID: 998604237}
-  - component: {fileID: 998604238}
   m_Layer: 0
   m_Name: "\u96B1\u85CF\u95DC\u5361\u8A08\u6578\u5668"
   m_TagString: Untagged
@@ -3119,20 +3118,6 @@ MonoBehaviour:
   score: 0
   scoreText: {fileID: 1391296755}
   scoreTextFormat: "\u30B9\u30B3\u30A2: {0}"
---- !u!114 &998604238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 998604234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80e40c53e9edf6541af0945b438b22ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentScoreText: {fileID: 1391296755}
-  currentScoreTextFormat: "\u7D2F\u8A08\u30DD\u30A4\u30F3\u30C8: {0}"
 --- !u!1 &1001957146
 GameObject:
   m_ObjectHideFlags: 0
