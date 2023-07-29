@@ -1097,11 +1097,11 @@ RectTransform:
   m_Father: {fileID: 89824989}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -50, y: -30}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 20, y: -30}
   m_SizeDelta: {x: 250, y: 50}
-  m_Pivot: {x: 1, y: 1}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &280414124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3067,6 +3067,7 @@ GameObject:
   - component: {fileID: 998604236}
   - component: {fileID: 998604235}
   - component: {fileID: 998604237}
+  - component: {fileID: 998604238}
   m_Layer: 0
   m_Name: "\u96B1\u85CF\u95DC\u5361\u8A08\u6578\u5668"
   m_TagString: Untagged
@@ -3118,6 +3119,20 @@ MonoBehaviour:
   score: 0
   scoreText: {fileID: 1391296755}
   scoreTextFormat: "\u30B9\u30B3\u30A2: {0}"
+--- !u!114 &998604238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998604234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e40c53e9edf6541af0945b438b22ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentScoreText: {fileID: 1391296755}
+  currentScoreTextFormat: "\u7D2F\u8A08\u30DD\u30A4\u30F3\u30C8: {0}"
 --- !u!1 &1001957146
 GameObject:
   m_ObjectHideFlags: 0
@@ -4092,11 +4107,11 @@ RectTransform:
   m_Father: {fileID: 89824989}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -28, y: -100}
-  m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 20, y: -100}
+  m_SizeDelta: {x: 300, y: 50}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &1391296755
 MonoBehaviour:
   m_ObjectHideFlags: 0

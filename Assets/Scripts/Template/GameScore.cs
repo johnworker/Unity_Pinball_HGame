@@ -52,10 +52,15 @@ public class GameScore : MonoBehaviour
         scoreText.text = string.Format(scoreTextFormat, this.score);
         // 記錄儲存分數
         // 游戏结束或切换场景时保存分数到玩家的偏好设置中
-        PlayerPrefs.SetInt("Score", this.score);
-        scoreEndText.text = string.Format(scoreEndTextFormat, this.score);
+        SaveScore();
 
         ScoreManager.SetFinalScore(this.score);
+    }
+
+    public void SaveScore()
+    {
+        PlayerPrefs.SetInt("TotalScore", score);
+        PlayerPrefs.Save();
     }
 
     // 合并隐藏关卡得分到主场景
