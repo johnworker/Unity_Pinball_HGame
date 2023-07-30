@@ -98,7 +98,7 @@ public class GameController : MonoBehaviour {
 		// 播放音效
 		if (leftTargetPosition != 0f && !leftFlipperSwung)
 		{
-			SystemSound.instance.PlaySound(soundWave, new Vector2(0.8f, 1.4f));
+			SystemSound.instance.PlaySound(soundWave, new Vector2(3f, 3.6f));
 			leftFlipperSwung = true;
 		}
 		else if (leftTargetPosition == 0f)
@@ -108,7 +108,7 @@ public class GameController : MonoBehaviour {
 
 		if (rightTargetPosition != 0f && !rightFlipperSwung)
 		{
-			SystemSound.instance.PlaySound(soundWave, new Vector2(0.8f, 1.4f));
+			SystemSound.instance.PlaySound(soundWave, new Vector2(3f, 3.6f));
 			rightFlipperSwung = true;
 		}
 		else if (rightTargetPosition == 0f)
