@@ -7671,6 +7671,7 @@ MonoBehaviour:
   powerGain: 1.2
   powerImage: {fileID: 1732242489}
   soundShoot: {fileID: 8300000, guid: 75776b59f5d357947afde759599a6479, type: 3}
+  soundWave: {fileID: 8300000, guid: 96aefc717bcba3d43aa93eae407c576f, type: 3}
 --- !u!114 &718441707
 MonoBehaviour:
   m_ObjectHideFlags: 0

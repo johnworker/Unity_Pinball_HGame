@@ -34,6 +34,13 @@ public class GameController : MonoBehaviour {
 	[SerializeField, Header("發射音效")]
 	private AudioClip soundShoot;
 
+	[SerializeField, Header("擋板揮動音效")]
+	private AudioClip soundWave;
+
+	private bool leftFlipperSwung = false;
+	private bool rightFlipperSwung = false;
+
+
 	// 用於儲存 Game 類別的實例
 	private Game game;
 
@@ -73,7 +80,8 @@ public class GameController : MonoBehaviour {
 		/*使用條件運算符 ? 來根據按鍵輸入設置左彈簧的目標位置。
 		 * 如果按下 A 鍵或左箭頭鍵，則將目標位置設置為 flipperActiveAngle，否則設置為 0。
 		 */
-		leftSpring.targetPosition = Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow) ? flipperActiveAngle : 0f;
+		float leftTargetPosition = Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow) ? flipperActiveAngle : 0f;
+		leftSpring.targetPosition = leftTargetPosition;
 		leftFlipper.spring = leftSpring;
 
 		// 右彈簧
@@ -81,8 +89,32 @@ public class GameController : MonoBehaviour {
 		/*使用條件運算符 ? 來根據按鍵輸入設置右彈簧的目標位置。
 		 * 如果按下 A 鍵或右箭頭鍵，則將目標位置設置為 flipperActiveAngle，否則設置為 0。
 		 */
-		rightSpring.targetPosition = Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) ? flipperActiveAngle : 0f;
+		float rightTargetPosition = Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) ? flipperActiveAngle : 0f;
+		rightSpring.targetPosition = rightTargetPosition;
 		rightFlipper.spring = rightSpring;
+
+
+		// 播放音效
+		// 播放音效
+		if (leftTargetPosition != 0f && !leftFlipperSwung)
+		{
+			SystemSound.instance.PlaySound(soundWave, new Vector2(0.8f, 1.4f));
+			leftFlipperSwung = true;
+		}
+		else if (leftTargetPosition == 0f)
+		{
+			leftFlipperSwung = false;
+		}
+
+		if (rightTargetPosition != 0f && !rightFlipperSwung)
+		{
+			SystemSound.instance.PlaySound(soundWave, new Vector2(0.8f, 1.4f));
+			rightFlipperSwung = true;
+		}
+		else if (rightTargetPosition == 0f)
+		{
+			rightFlipperSwung = false;
+		}
 	}
 
 	/// <summary>
