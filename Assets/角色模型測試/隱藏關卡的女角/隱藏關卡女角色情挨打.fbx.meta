@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 96f2d77ae281c2a4c8bf5719e72c01a6
+guid: 0ac8df2e91396794194a9cd4b8fd57ed
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -8,62 +8,32 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: "\u6750\u8CEA.001"
-    second: {fileID: 2100000, guid: 9bc58973f7384d44290c76808d01c5bf, type: 2}
+    second: {fileID: 2100000, guid: 7ec7fe0eb3c86e0449b9d2da5d78d9d3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: "\u6750\u8CEA.002"
-    second: {fileID: 2100000, guid: 2396d0a880b04144992aa0b7eb6d192c, type: 2}
+    second: {fileID: 2100000, guid: bafaee1fc8d557b42b92d7f0dd3a8841, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: "\u6750\u8CEA.004"
-    second: {fileID: 2100000, guid: 9bc58973f7384d44290c76808d01c5bf, type: 2}
+    second: {fileID: 2100000, guid: 7ec7fe0eb3c86e0449b9d2da5d78d9d3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: "\u6750\u8CEA.005"
-    second: {fileID: 2100000, guid: 9bc58973f7384d44290c76808d01c5bf, type: 2}
+    second: {fileID: 2100000, guid: 7ec7fe0eb3c86e0449b9d2da5d78d9d3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: "\u6750\u8CEA.006"
-    second: {fileID: 2100000, guid: 9bc58973f7384d44290c76808d01c5bf, type: 2}
+    second: {fileID: 2100000, guid: 7ec7fe0eb3c86e0449b9d2da5d78d9d3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: "\u6750\u8CEA.007"
-    second: {fileID: 2100000, guid: 9bc58973f7384d44290c76808d01c5bf, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "\u6750\u8CEA.012"
-    second: {fileID: 2100000, guid: 30124349f20d6d846b2df7758e244174, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "\u6750\u8CEA.026"
-    second: {fileID: 2100000, guid: 30124349f20d6d846b2df7758e244174, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "\u6750\u8CEA.027"
-    second: {fileID: 2100000, guid: 30124349f20d6d846b2df7758e244174, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "\u6750\u8CEA.028"
-    second: {fileID: 2100000, guid: 30124349f20d6d846b2df7758e244174, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "\u6750\u8CEA.030"
-    second: {fileID: 2100000, guid: 30124349f20d6d846b2df7758e244174, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: "\u6750\u8CEA.031"
-    second: {fileID: 2100000, guid: cc312c4ae78e995439b65c0be775b273, type: 2}
+    second: {fileID: 2100000, guid: 7ec7fe0eb3c86e0449b9d2da5d78d9d3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -93,11 +63,40 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: "\u5973\u89D2\u81C9\u90E8\u52D5\u756B"
-      takeName: "\u9AA8\u67B6Action"
-      internalID: 7231656201509087100
+      name: "\u7B49\u5F85"
+      takeName: "\u9AA8\u67B6|\u9AA8\u67B6Action"
+      internalID: -4139047674318071871
+      firstFrame: 35
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: "\u53D7\u50B7"
+      takeName: "\u9AA8\u67B6|\u9AA8\u67B6Action"
+      internalID: 547701014215323469
       firstFrame: 0
-      lastFrame: 46
+      lastFrame: 31
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -105,64 +104,6 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: "\u5973\u89D2\u52D5\u756B"
-      takeName: "\u9AA8\u67B6|\u9AA8\u67B6Action.001"
-      internalID: 4514621443675934803
-      firstFrame: 0
-      lastFrame: 30
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: "\u7537\u89D2\u52D5\u756B"
-      takeName: "\u9AA8\u67B6.001|\u9AA8\u67B6.001Action"
-      internalID: 2384543393226057831
-      firstFrame: 0
-      lastFrame: 30
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
