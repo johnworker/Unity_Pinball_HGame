@@ -12,6 +12,9 @@ public class FieldDuplicator : MonoBehaviour {
 	private Game game;
 	private float nextCooldown;
 
+	[SerializeField, Header("玻璃魔術音效")]
+	private AudioClip soundGlassMagic;
+
 	void Start() {
 		game = Game.instance;
 	}
@@ -31,6 +34,7 @@ public class FieldDuplicator : MonoBehaviour {
 
 			for (int i = 0; i < ballCount; i++) {
 				Instantiate(game.ballPrefab, ball.transform.position, ball.transform.rotation);
+				SystemSound.instance.PlaySound(soundGlassMagic, new Vector2(0.5f, 0.8f));
 			}
 		}
 	}

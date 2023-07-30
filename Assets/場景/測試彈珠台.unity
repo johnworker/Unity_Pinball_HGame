@@ -1190,6 +1190,7 @@ MonoBehaviour:
   moveSpeed: 2
   interval: 5
   initialDelay: 3
+  soundFenceMove: {fileID: 0}
 --- !u!65 &141861598
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2232,6 +2233,7 @@ Transform:
   - {fileID: 1383294874}
   - {fileID: 1029513702}
   - {fileID: 1471548395}
+  - {fileID: 1666971060}
   - {fileID: 1923605298}
   - {fileID: 714757612}
   - {fileID: 568326048}
@@ -2240,7 +2242,6 @@ Transform:
   - {fileID: 1417109447}
   - {fileID: 141861596}
   - {fileID: 1088244371}
-  - {fileID: 1666971060}
   - {fileID: 1804320839}
   m_Father: {fileID: 0}
   m_RootOrder: 9
@@ -5961,7 +5962,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 94286458bfa1e884ea693301e2b829c0, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 94286458bfa1e884ea693301e2b829c0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0000001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 94286458bfa1e884ea693301e2b829c0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0000001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94286458bfa1e884ea693301e2b829c0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5981,7 +5990,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94286458bfa1e884ea693301e2b829c0, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94286458bfa1e884ea693301e2b829c0, type: 3}
       propertyPath: m_LocalRotation.y
@@ -5989,7 +5998,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94286458bfa1e884ea693301e2b829c0, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94286458bfa1e884ea693301e2b829c0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6035,6 +6044,7 @@ MonoBehaviour:
   moveSpeed: 2
   interval: 3
   initialDelay: 3
+  soundFenceMove: {fileID: 8300000, guid: 0fd3d4c1fde0f484097c8f5d93edb5a6, type: 3}
 --- !u!65 &568326051
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7502,7 +7512,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 94286458bfa1e884ea693301e2b829c0, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94286458bfa1e884ea693301e2b829c0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7522,15 +7532,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94286458bfa1e884ea693301e2b829c0, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94286458bfa1e884ea693301e2b829c0, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94286458bfa1e884ea693301e2b829c0, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94286458bfa1e884ea693301e2b829c0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7576,6 +7586,7 @@ MonoBehaviour:
   moveSpeed: 2
   interval: 3
   initialDelay: 3
+  soundFenceMove: {fileID: 8300000, guid: 0fd3d4c1fde0f484097c8f5d93edb5a6, type: 3}
 --- !u!65 &714757615
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7659,6 +7670,7 @@ MonoBehaviour:
   minMaxForce: {x: 10, y: 20}
   powerGain: 1.2
   powerImage: {fileID: 1732242489}
+  soundShoot: {fileID: 8300000, guid: 75776b59f5d357947afde759599a6479, type: 3}
 --- !u!114 &718441707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8010,7 +8022,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 489c039973b772947aae0babd4adf221, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 489c039973b772947aae0babd4adf221, type: 3}
       propertyPath: m_LocalScale.x
@@ -8104,6 +8116,7 @@ MonoBehaviour:
   moveSpeed: 2
   interval: 5
   initialDelay: 3
+  soundFenceMove: {fileID: 0}
 --- !u!65 &743593573
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8353,7 +8366,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 94286458bfa1e884ea693301e2b829c0, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 94286458bfa1e884ea693301e2b829c0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0000001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 94286458bfa1e884ea693301e2b829c0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0000001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94286458bfa1e884ea693301e2b829c0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8373,7 +8394,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94286458bfa1e884ea693301e2b829c0, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94286458bfa1e884ea693301e2b829c0, type: 3}
       propertyPath: m_LocalRotation.y
@@ -8381,7 +8402,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94286458bfa1e884ea693301e2b829c0, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94286458bfa1e884ea693301e2b829c0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8427,6 +8448,7 @@ MonoBehaviour:
   moveSpeed: 2
   interval: 3
   initialDelay: 3
+  soundFenceMove: {fileID: 8300000, guid: 0fd3d4c1fde0f484097c8f5d93edb5a6, type: 3}
 --- !u!65 &789482362
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10805,6 +10827,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1980906402}
     m_Modifications:
+    - target: {fileID: 1080103971, guid: aa5d2fafdc650244d9afaa433ccbeed6, type: 3}
+      propertyPath: soundGlassMagic
+      value: 
+      objectReference: {fileID: 8300000, guid: 66fb839bfffbfad45b6b9a06f79efea5, type: 3}
     - target: {fileID: 1119629904856234, guid: aa5d2fafdc650244d9afaa433ccbeed6, type: 3}
       propertyPath: m_Name
       value: "\u8907\u88FD\u7246"
@@ -10894,6 +10920,7 @@ MonoBehaviour:
   moveSpeed: 2
   interval: 5
   initialDelay: 3
+  soundFenceMove: {fileID: 0}
 --- !u!65 &1088244373
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13068,7 +13095,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 489c039973b772947aae0babd4adf221, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 489c039973b772947aae0babd4adf221, type: 3}
       propertyPath: m_LocalScale.x
@@ -13544,6 +13571,7 @@ MonoBehaviour:
   moveSpeed: 2
   interval: 5
   initialDelay: 3
+  soundFenceMove: {fileID: 0}
 --- !u!65 &1417109449
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15362,6 +15390,7 @@ MonoBehaviour:
   bankID: 0
   resetDelay: 0.5
   isDropped: 0
+  soundPushDown: {fileID: 8300000, guid: 15f55b2809a88dd49b33f90b4c1c3235, type: 3}
 --- !u!65 &1644852468
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15384,7 +15413,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 489c039973b772947aae0babd4adf221, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 489c039973b772947aae0babd4adf221, type: 3}
       propertyPath: m_LocalScale.x
@@ -15540,7 +15569,7 @@ Transform:
   - {fileID: 39591254}
   - {fileID: 374603453}
   m_Father: {fileID: 251243199}
-  m_RootOrder: 13
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1681972748
 PrefabInstance:
@@ -16190,7 +16219,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 489c039973b772947aae0babd4adf221, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 489c039973b772947aae0babd4adf221, type: 3}
       propertyPath: m_LocalScale.x
@@ -17400,6 +17429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hiddenLevelSceneName: "\u96B1\u85CF\u52A0\u5206\u95DC\u5361"
+  soundKnock: {fileID: 8300000, guid: bb4efe92479a53046b85891e03d3e60e, type: 3}
 --- !u!1001 &1898927179
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17691,7 +17721,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 94286458bfa1e884ea693301e2b829c0, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94286458bfa1e884ea693301e2b829c0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17711,15 +17741,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94286458bfa1e884ea693301e2b829c0, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94286458bfa1e884ea693301e2b829c0, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94286458bfa1e884ea693301e2b829c0, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94286458bfa1e884ea693301e2b829c0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -17765,6 +17795,7 @@ MonoBehaviour:
   moveSpeed: 2
   interval: 3
   initialDelay: 3
+  soundFenceMove: {fileID: 8300000, guid: 0fd3d4c1fde0f484097c8f5d93edb5a6, type: 3}
 --- !u!65 &1923605301
 BoxCollider:
   m_ObjectHideFlags: 0

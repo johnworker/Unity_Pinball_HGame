@@ -11,14 +11,13 @@ public class DropTarget : MonoBehaviour
 
     public bool isDropped = false;
 
+    [SerializeField, Header("¤UÀ£­µ®Ä")]
+    private AudioClip soundPushDown;
+
+
     void Start()
     {
         dropTargets.Add(this);
-    }
-
-    void Update()
-    {
-        
     }
 
     void OnCollisionEnter()
@@ -28,6 +27,7 @@ public class DropTarget : MonoBehaviour
             transform.position += Vector3.down * dropDistance;
             isDropped = true;
 
+            SystemSound.instance.PlaySound(soundPushDown, new Vector2(1f, 1.5f));
 
             bool resetBank = true;
             foreach (DropTarget target in dropTargets)

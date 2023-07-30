@@ -31,6 +31,9 @@ public class GameController : MonoBehaviour {
 	[Header("UI 圖像")]
 	public Image powerImage;
 
+	[SerializeField, Header("發射音效")]
+	private AudioClip soundShoot;
+
 	// 用於儲存 Game 類別的實例
 	private Game game;
 
@@ -94,6 +97,7 @@ public class GameController : MonoBehaviour {
 		// 釋放時在 minMaxForce 之間添加基於 0..1
 		if (Input.GetKeyUp(KeyCode.Space)) {
 			game.ShootBall(minMaxForce.x + (Mathf.Clamp01(power) * (minMaxForce.y - minMaxForce.x)));
+			SystemSound.instance.PlaySound(soundShoot, new Vector2(0.2f, 0.5f));
 			power = 0f;
 		}
 

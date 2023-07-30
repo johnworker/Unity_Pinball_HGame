@@ -17,6 +17,10 @@ public class MovingWall : MonoBehaviour
     private bool movingUp = true;     // 是否向上移動
     private bool isMoving = false;    // 是否正在移動
 
+    [SerializeField, Header("柵欄移動音效")]
+    private AudioClip soundFenceMove;
+
+
     private void Awake()
     {
         originalY = transform.position.y;  // 記錄原始的Y坐標
@@ -34,6 +38,7 @@ public class MovingWall : MonoBehaviour
         yield return new WaitForSeconds(initialDelay);
 
         // 執行 MoveWall 協程
+        SystemSound.instance.PlaySound(soundFenceMove, new Vector2(0.7f, 1.1f));
         StartCoroutine(MoveWall());
     }
 
@@ -50,15 +55,21 @@ public class MovingWall : MonoBehaviour
 
                 // 設置 isMoving 為 true，表示牆壁需要移動
                 isMoving = true;
+
+                SystemSound.instance.PlaySound(soundFenceMove, new Vector2(0.7f, 1.1f));
+
             }
+
 
             // 平滑移動牆壁
             float newY = Mathf.MoveTowards(transform.position.y, targetY, moveSpeed * Time.deltaTime);
+
             transform.position = new Vector3(transform.position.x, newY, transform.position.z);
 
             // 檢查是否到達目標位置
             if (Mathf.Abs(transform.position.y - targetY) < 0.01f)
             {
+
                 // 到達目標位置後，將 isMoving 設置為 false，表示牆壁停止移動
                 isMoving = false;
 
