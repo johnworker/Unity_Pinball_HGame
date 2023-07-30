@@ -7634,9 +7634,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   ballReady: 1
-  ballCount: 1
+  ballCount: 3
   ballCountText: {fileID: 2145087299}
-  ballStartCount: 1
+  ballStartCount: 3
   ballDisplay: {fileID: 1193190341}
   ballPrefab: {fileID: 114490561531822830, guid: fec322a09db1d494e8746a6d7030bf27, type: 3}
   ballSpawnPoint: {fileID: 1443309768}
@@ -18691,8 +18691,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 170.40039}
-  m_SizeDelta: {x: 45.2, y: 38.2}
+  m_AnchoredPosition: {x: 0, y: 68.7}
+  m_SizeDelta: {x: 75, y: 229}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &2145087299
 MonoBehaviour:
@@ -18714,7 +18714,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3
+  m_text: "\u6B8B\u308A\u306E\u30D3\u30FC\u7389(3)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2cc252a335b5cdf41a212903945bfb9a, type: 2}
   m_sharedMaterial: {fileID: -2085875215239369729, guid: 2cc252a335b5cdf41a212903945bfb9a, type: 2}
@@ -18741,8 +18741,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
