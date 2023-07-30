@@ -30,7 +30,6 @@ public class Game : MonoBehaviour {
 	public Transform ballSpawnPoint;
 
 
-
 	// 管理遊戲的分數
 	public GameScore score { get; private set; }
 	// 用於控制遊戲的行為
@@ -80,7 +79,7 @@ public class Game : MonoBehaviour {
 	/// </summary>
 	public void StartGame() {
 		isActive = true;
-		ballCount = ballStartCount;
+		ballCount =  ballStartCount;
 		ballCountText.text = ballCount.ToString();
 
 		SetBallReady(true);
@@ -142,6 +141,9 @@ public class Game : MonoBehaviour {
 	public void SetBallReady(bool ready) {
 		ballReady = ready;
 		ballDisplay.SetActive(ready);
-		ballCountText.text = ballCount.ToString();
+		if (ready)
+		{
+			ballCountText.text = "残りのビー玉: " + ballCount.ToString(); // Concatenate the text with ball count
+		}
 	}
 }
