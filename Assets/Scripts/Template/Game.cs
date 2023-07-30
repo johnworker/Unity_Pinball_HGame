@@ -143,7 +143,7 @@ public class Game : MonoBehaviour {
 		ballDisplay.SetActive(ready);
 		if (ready)
 		{
-			ballCountText.text = "残りのビー玉: " + ballCount.ToString(); // Concatenate the text with ball count
+			ballCountText.text = "残りのビー玉: " + ballCount.ToString(); 
 		}
 	}
 }

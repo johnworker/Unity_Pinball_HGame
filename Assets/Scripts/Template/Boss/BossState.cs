@@ -29,6 +29,9 @@ public class BossState : MonoBehaviour
     [Header("可被打擊次數")]
     public int canHitCountNumbers = 3; // 記錄被打的次數
 
+    [SerializeField, Header("受傷音效")]
+    private AudioClip soundHurt;
+
     private void Start()
     {
         StartCoroutine(WaitAndChangeToStand());
@@ -62,6 +65,9 @@ public class BossState : MonoBehaviour
                 // 播放趴下受傷動畫
                 ani.SetBool(parGetDownHurt, true); 
                 ani.SetBool(parStandHurt, true);
+                // 播放受傷音效
+                // 音效系統.靜態實體.撥放音效(音效，實體);
+                SystemSound.instance.PlaySound(soundHurt, new Vector2(0.8f, 1.3f));
 
                 // 繼續播放等待動畫
                 StartCoroutine(WaitAndContinueAnimation());
