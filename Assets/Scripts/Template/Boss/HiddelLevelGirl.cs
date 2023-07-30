@@ -8,6 +8,8 @@ public class HiddelLevelGirl : MonoBehaviour
     public Animator ani;
     [Header("受傷搖動參數")]
     public string parHurt = "受傷";  // 受傷 bool
+    [SerializeField, Header("受傷音效")]
+    private AudioClip hiddelSoundHurt;
 
     private bool isHurt = false;
 
@@ -27,7 +29,12 @@ public class HiddelLevelGirl : MonoBehaviour
 
         // 播放“受傷”動畫
         ani.SetBool(parHurt, true);
+        // 播放受傷音效
+        // 音效系統.靜態實體.撥放音效(音效，實體);
+        SystemSound.instance.PlaySound(hiddelSoundHurt, new Vector2(0.8f, 1.3f));
+
         isHurt = true;
+
 
         // 等待動畫播放結束
         yield return new WaitForSeconds(1.5f);
