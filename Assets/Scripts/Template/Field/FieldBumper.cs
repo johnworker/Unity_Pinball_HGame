@@ -6,7 +6,10 @@ using UnityEngine;
 [RequireComponent(typeof(Collider))]
 public class FieldBumper : MonoBehaviour {
 	// 球反射的強度有多大
-	public float bounceForce = 1.3f;
+	public float bounceForce = 1.2f;
+
+	[SerializeField, Header("彈力音效")]
+	private AudioClip soundRebound;
 
 	/// <summary>
 	/// 將檢查球是否與該對象發生碰撞
@@ -18,6 +21,7 @@ public class FieldBumper : MonoBehaviour {
 
 		if (ball) {
 			ball.AddForce(-(collision.contacts[0].normal * bounceForce));
+			SystemSound.instance.PlaySound(soundRebound, new Vector2(0.9f, 1.4f));
 		}
 	}
 }
