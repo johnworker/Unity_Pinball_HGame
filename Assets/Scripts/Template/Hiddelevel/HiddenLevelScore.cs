@@ -10,8 +10,6 @@ public class HiddenLevelScore : MonoBehaviour
 	public TextMeshProUGUI scoreText;
 	public string scoreTextFormat = "スコア: {0}";
 
-	private GameScore gameScore;
-
 
 	private void Awake()
     {
@@ -26,6 +24,7 @@ public class HiddenLevelScore : MonoBehaviour
 	/// <param name="score">Amount</param>
 	public void AddScore(int score)
 	{
+		GameScore.instance.AddScore(score);
 		this.score += score;
 		UpdateLevelScore();
 

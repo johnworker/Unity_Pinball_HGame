@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class GameScore : MonoBehaviour
 {
+    public static GameScore instance;
     public int score { get; private set; }
 
     public TextMeshProUGUI scoreText;
@@ -17,6 +18,8 @@ public class GameScore : MonoBehaviour
 
     private void Awake()
     {
+        instance = this;
+
         // 获取隐藏关卡得分并合并到当前得分
         int hiddenLevelScore = PlayerPrefs.GetInt("HiddenLevelScore", 0);
         AddScore(hiddenLevelScore);
