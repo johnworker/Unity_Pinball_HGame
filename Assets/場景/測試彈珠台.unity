@@ -17575,6 +17575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hiddenLevelSceneName: "\u96B1\u85CF\u52A0\u5206\u95DC\u5361"
   soundKnock: {fileID: 8300000, guid: bb4efe92479a53046b85891e03d3e60e, type: 3}
+  soundTheMill: {fileID: 8300000, guid: 5a6d00e376be3b64f9b391ee189f0e01, type: 3}
 --- !u!1001 &1898927179
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -10,6 +10,18 @@ public class HiddenLevelTrigger : MonoBehaviour
     [SerializeField, Header("碰撞音效")]
     private AudioClip soundKnock;
 
+    [SerializeField, Header("磨坊用音效")]
+    private AudioClip soundTheMill;
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ball"))
+        {
+            // 播放磨坊碰到球的音效
+            SystemSound.instance.PlaySound(soundTheMill, new Vector2(1f, 2f));
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         // 檢查玩家是否觸發觸發器並且隱藏關卡未解鎖
