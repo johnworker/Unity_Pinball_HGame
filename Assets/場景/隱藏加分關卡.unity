@@ -1683,6 +1683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f41761a596d7804d866f381a10ae5cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundFail: {fileID: 8300000, guid: 329cc1386adbf0a4c90a30bdf2d11a12, type: 3}
 --- !u!23 &353362394
 MeshRenderer:
   m_ObjectHideFlags: 0

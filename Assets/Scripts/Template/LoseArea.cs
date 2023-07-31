@@ -6,6 +6,10 @@ using UnityEngine;
 [RequireComponent(typeof(Collider))]
 public class LoseArea : MonoBehaviour {
 
+	[SerializeField, Header("失敗音效")]
+	private AudioClip soundFail;
+
+
 	/// <summary>
 	/// 將檢查球是否與該對象發生碰撞
 	/// </summary>
@@ -14,6 +18,9 @@ public class LoseArea : MonoBehaviour {
 		Ball ball = collider.transform.GetComponent<Ball>();
 
 		if (ball) {
+
+			SystemSound.instance.PlaySound(soundFail, new Vector2(1f, 1.4f));
+
 			// 如果我們想要整個東西消失，可以將其更改為 .gameObject
 			// 但現在我們只是毀掉腳本，讓球留下來
 			Destroy(ball.gameObject);
