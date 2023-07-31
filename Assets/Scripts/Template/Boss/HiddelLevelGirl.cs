@@ -31,7 +31,7 @@ public class HiddelLevelGirl : MonoBehaviour
         ani.SetBool(parHurt, true);
         // 播放受傷音效
         // 音效系統.靜態實體.撥放音效(音效，實體);
-        SystemSound.instance.PlaySound(hiddelSoundHurt, new Vector2(0.8f, 1.3f));
+        SystemSound.instance.PlaySound(hiddelSoundHurt, new Vector2(5f, 5.3f));
 
         isHurt = true;
 

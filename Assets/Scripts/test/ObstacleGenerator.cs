@@ -87,6 +87,11 @@ public class ObstacleGenerator : MonoBehaviour
 
         bool hasCollided = false;
 
+        if (obstacle == null)
+        {
+            yield break; // 协程提前结束
+        }
+
         Vector3 startPos = obstacle.transform.position;
         Vector3 endPos = startPos + new Vector3(
             Random.Range(-moveRange, moveRange),
@@ -106,8 +111,12 @@ public class ObstacleGenerator : MonoBehaviour
         while (t < 1f)
         {
             t += Time.deltaTime / moveDuration;
-            obstacle.transform.position = Vector3.Lerp(startPos, endPos, t);
-            obstacle.transform.rotation = Quaternion.Slerp(startRot, endRot, t);
+
+            if (obstacle != null)
+            {
+                obstacle.transform.position = Vector3.Lerp(startPos, endPos, t);
+                obstacle.transform.rotation = Quaternion.Slerp(startRot, endRot, t);
+            }
 
             if (hasCollided)
             {

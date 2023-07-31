@@ -2103,6 +2103,7 @@ MonoBehaviour:
   ani: {fileID: 6452793910040219527}
   parHurtMove: "\u53D7\u50B7"
   waitDuration: 1
+  obstacleSoundHurt: {fileID: 8300000, guid: f107aedd278d017498b51960e2e2c3e6, type: 3}
 --- !u!114 &1733125282218544781
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -14,6 +14,9 @@ public class Obstacle : MonoBehaviour
     public string parHurtMove = "受傷";
     public float waitDuration = 1f; // 等待動畫播放時間
 
+    [SerializeField, Header("受傷音效")]
+    private AudioClip obstacleSoundHurt;
+
     private void OnCollisionEnter(Collision collision)
     {
         // 檢測到碰撞的對像是球時
@@ -22,6 +25,8 @@ public class Obstacle : MonoBehaviour
             // Destroy(gameObject);
 
             ani.SetBool(parHurtMove, true);
+            SystemSound.instance.PlaySound(obstacleSoundHurt, new Vector2(2f, 2.3f));
+
             hitCount++; // 增加被打的次數
 
             // 如果被打次數達到3次，則銷毀障礙物

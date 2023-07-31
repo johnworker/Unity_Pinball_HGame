@@ -73,7 +73,7 @@ public class BossState : MonoBehaviour
                 ani.SetBool(parStandHurt, true);
                 // 播放受傷音效
                 // 音效系統.靜態實體.撥放音效(音效，實體);
-                SystemSound.instance.PlaySound(soundHurt, new Vector2(0.8f, 1.3f));
+                SystemSound.instance.PlaySound(soundHurt, new Vector2(4.8f, 5.3f));
 
                 // 繼續播放等待動畫
                 StartCoroutine(WaitAndContinueAnimation());
