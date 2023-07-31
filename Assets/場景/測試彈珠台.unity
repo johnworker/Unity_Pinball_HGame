@@ -291,6 +291,7 @@ GameObject:
   - component: {fileID: 15382732}
   - component: {fileID: 15382731}
   - component: {fileID: 15382730}
+  - component: {fileID: 15382733}
   m_Layer: 0
   m_Name: "\u5DE6\u9577\u7246"
   m_TagString: Untagged
@@ -376,6 +377,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 15382728}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &15382733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15382728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdf65c7d537dc2c4f8571649d7aae54b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundWoodWallHit: {fileID: 8300000, guid: 97481b199a0edef43b04995a56f8fa83, type: 3}
 --- !u!1001 &17578308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -601,6 +615,7 @@ GameObject:
   - component: {fileID: 30697910}
   - component: {fileID: 30697909}
   - component: {fileID: 30697908}
+  - component: {fileID: 30697911}
   m_Layer: 0
   m_Name: "\u53F3\u4E0B\u7246"
   m_TagString: Untagged
@@ -686,6 +701,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 30697906}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &30697911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30697906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdf65c7d537dc2c4f8571649d7aae54b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundWoodWallHit: {fileID: 8300000, guid: 97481b199a0edef43b04995a56f8fa83, type: 3}
 --- !u!1001 &35251054
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1191,6 +1219,7 @@ MonoBehaviour:
   interval: 5
   initialDelay: 3
   soundFenceMove: {fileID: 0}
+  soundHitByTheBall: {fileID: 0}
 --- !u!65 &141861598
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1855,6 +1884,7 @@ GameObject:
   - component: {fileID: 190545743}
   - component: {fileID: 190545742}
   - component: {fileID: 190545741}
+  - component: {fileID: 190545744}
   m_Layer: 0
   m_Name: Cube (13)
   m_TagString: Untagged
@@ -1940,6 +1970,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 190545739}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &190545744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190545739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdf65c7d537dc2c4f8571649d7aae54b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundWoodWallHit: {fileID: 8300000, guid: 97481b199a0edef43b04995a56f8fa83, type: 3}
 --- !u!1001 &209305203
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4562,6 +4605,7 @@ MonoBehaviour:
   waitDurationChangeAni: 5
   canHitCountNumbers: 20
   soundHurt: {fileID: 8300000, guid: f3b3af02045c90044a40226a56a27372, type: 3}
+  soundExplode: {fileID: 8300000, guid: 6e026e79d04007a4cb590244179163e4, type: 3}
 --- !u!95 &466496165
 Animator:
   serializedVersion: 4
@@ -5327,6 +5371,7 @@ GameObject:
   - component: {fileID: 507987647}
   - component: {fileID: 507987646}
   - component: {fileID: 507987645}
+  - component: {fileID: 507987648}
   m_Layer: 0
   m_Name: Cube (14)
   m_TagString: Untagged
@@ -5412,6 +5457,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 507987643}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &507987648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507987643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdf65c7d537dc2c4f8571649d7aae54b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundWoodWallHit: {fileID: 8300000, guid: 97481b199a0edef43b04995a56f8fa83, type: 3}
 --- !u!1001 &512768307
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6045,6 +6103,7 @@ MonoBehaviour:
   interval: 3
   initialDelay: 3
   soundFenceMove: {fileID: 8300000, guid: 0fd3d4c1fde0f484097c8f5d93edb5a6, type: 3}
+  soundHitByTheBall: {fileID: 8300000, guid: 2e5310512e6db0d4b92ea7ceae64254f, type: 3}
 --- !u!65 &568326051
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6700,6 +6759,7 @@ GameObject:
   - component: {fileID: 642740600}
   - component: {fileID: 642740599}
   - component: {fileID: 642740598}
+  - component: {fileID: 642740601}
   m_Layer: 0
   m_Name: "\u53F3\u9577\u7246"
   m_TagString: Untagged
@@ -6785,6 +6845,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 642740596}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &642740601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642740596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdf65c7d537dc2c4f8571649d7aae54b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundWoodWallHit: {fileID: 8300000, guid: 97481b199a0edef43b04995a56f8fa83, type: 3}
 --- !u!1001 &646333970
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6932,6 +7005,7 @@ GameObject:
   - component: {fileID: 665015170}
   - component: {fileID: 665015169}
   - component: {fileID: 665015168}
+  - component: {fileID: 665015171}
   m_Layer: 0
   m_Name: "\u5DE6\u4E0B\u7246"
   m_TagString: Untagged
@@ -7017,6 +7091,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 665015166}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &665015171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665015166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdf65c7d537dc2c4f8571649d7aae54b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundWoodWallHit: {fileID: 8300000, guid: 97481b199a0edef43b04995a56f8fa83, type: 3}
 --- !u!1001 &670332073
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7587,6 +7674,7 @@ MonoBehaviour:
   interval: 3
   initialDelay: 3
   soundFenceMove: {fileID: 8300000, guid: 0fd3d4c1fde0f484097c8f5d93edb5a6, type: 3}
+  soundHitByTheBall: {fileID: 8300000, guid: 2e5310512e6db0d4b92ea7ceae64254f, type: 3}
 --- !u!65 &714757615
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8118,6 +8206,7 @@ MonoBehaviour:
   interval: 5
   initialDelay: 3
   soundFenceMove: {fileID: 0}
+  soundHitByTheBall: {fileID: 0}
 --- !u!65 &743593573
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8450,6 +8539,7 @@ MonoBehaviour:
   interval: 3
   initialDelay: 3
   soundFenceMove: {fileID: 8300000, guid: 0fd3d4c1fde0f484097c8f5d93edb5a6, type: 3}
+  soundHitByTheBall: {fileID: 8300000, guid: 2e5310512e6db0d4b92ea7ceae64254f, type: 3}
 --- !u!65 &789482362
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9186,6 +9276,7 @@ GameObject:
   - component: {fileID: 902930669}
   - component: {fileID: 902930668}
   - component: {fileID: 902930667}
+  - component: {fileID: 902930670}
   m_Layer: 0
   m_Name: Cube (11)
   m_TagString: Untagged
@@ -9271,6 +9362,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 902930665}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &902930670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902930665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdf65c7d537dc2c4f8571649d7aae54b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundWoodWallHit: {fileID: 8300000, guid: 97481b199a0edef43b04995a56f8fa83, type: 3}
 --- !u!4 &916789906 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8269870603375965262, guid: c75e6536200a9574695d9619cf48f1d3, type: 3}
@@ -10941,6 +11045,7 @@ MonoBehaviour:
   interval: 5
   initialDelay: 3
   soundFenceMove: {fileID: 0}
+  soundHitByTheBall: {fileID: 0}
 --- !u!65 &1088244373
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11136,6 +11241,7 @@ GameObject:
   - component: {fileID: 1158074031}
   - component: {fileID: 1158074030}
   - component: {fileID: 1158074029}
+  - component: {fileID: 1158074032}
   m_Layer: 0
   m_Name: "\u6B63\u4E0A\u9577\u7246"
   m_TagString: Untagged
@@ -11221,6 +11327,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1158074027}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1158074032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158074027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdf65c7d537dc2c4f8571649d7aae54b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundWoodWallHit: {fileID: 8300000, guid: 97481b199a0edef43b04995a56f8fa83, type: 3}
 --- !u!1001 &1161216924
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13592,6 +13711,7 @@ MonoBehaviour:
   interval: 5
   initialDelay: 3
   soundFenceMove: {fileID: 0}
+  soundHitByTheBall: {fileID: 0}
 --- !u!65 &1417109449
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17821,6 +17941,7 @@ MonoBehaviour:
   interval: 3
   initialDelay: 3
   soundFenceMove: {fileID: 8300000, guid: 0fd3d4c1fde0f484097c8f5d93edb5a6, type: 3}
+  soundHitByTheBall: {fileID: 8300000, guid: 2e5310512e6db0d4b92ea7ceae64254f, type: 3}
 --- !u!65 &1923605301
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18401,6 +18522,7 @@ GameObject:
   - component: {fileID: 2028722011}
   - component: {fileID: 2028722010}
   - component: {fileID: 2028722009}
+  - component: {fileID: 2028722012}
   m_Layer: 0
   m_Name: Cube (7)
   m_TagString: Untagged
@@ -18486,6 +18608,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2028722007}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2028722012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028722007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdf65c7d537dc2c4f8571649d7aae54b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundWoodWallHit: {fileID: 8300000, guid: 97481b199a0edef43b04995a56f8fa83, type: 3}
 --- !u!1 &2030714623
 GameObject:
   m_ObjectHideFlags: 0

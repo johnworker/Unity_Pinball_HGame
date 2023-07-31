@@ -20,6 +20,8 @@ public class MovingWall : MonoBehaviour
     [SerializeField, Header("柵欄移動音效")]
     private AudioClip soundFenceMove;
 
+    [SerializeField, Header("柵欄被球撞音效")]
+    private AudioClip soundHitByTheBall;
 
     private void Awake()
     {
@@ -78,6 +80,16 @@ public class MovingWall : MonoBehaviour
             }
 
             yield return null;
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        // 檢查是否和球碰撞
+        if (collision.gameObject.CompareTag("Ball"))
+        {
+            // 播放碰撞音效
+            SystemSound.instance.PlaySound(soundHitByTheBall, new Vector2(0.7f, 1.1f));
         }
     }
 }

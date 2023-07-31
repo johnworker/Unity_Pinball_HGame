@@ -32,6 +32,10 @@ public class BossState : MonoBehaviour
     [SerializeField, Header("受傷音效")]
     private AudioClip soundHurt;
 
+    [SerializeField, Header("受傷爆炸音效")]
+    private AudioClip soundExplode;
+
+
     private void Start()
     {
         StartCoroutine(WaitAndChangeToStand());
@@ -53,6 +57,8 @@ public class BossState : MonoBehaviour
                 // 銷毀角色的衣服
                 Destroy(BossGirl.transform.Find("衣服").gameObject);
                 Destroy(BossGirl.transform.Find("褲子").gameObject);
+                SystemSound.instance.PlaySound(soundExplode, new Vector2(0.5f, 0.8f));
+
             }
 
             // 如果被打次數達到，則銷毀障礙物
