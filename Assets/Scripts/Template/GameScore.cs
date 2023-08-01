@@ -7,8 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class GameScore : MonoBehaviour
 {
-    public static GameScore instance;
-    public int score { get; private set; }
+    public static int score;
 
     public TextMeshProUGUI scoreText;
     public string scoreTextFormat = "スコア: {0}";
@@ -18,7 +17,6 @@ public class GameScore : MonoBehaviour
 
     private void Awake()
     {
-        instance = this;
 
         // 获取隐藏关卡得分并合并到当前得分
         int hiddenLevelScore = PlayerPrefs.GetInt("HiddenLevelScore", 0);
@@ -36,7 +34,7 @@ public class GameScore : MonoBehaviour
     /// <param name="score">Amount</param>
     public void AddScore(int score)
     {
-        this.score += score;
+        GameScore.score += score;
         UpdateScore();
     }
 
@@ -55,21 +53,20 @@ public class GameScore : MonoBehaviour
     public void UpdateScore()
     {
         UpdateLevelScore();
-        scoreText.text = string.Format(scoreTextFormat, this.score);
-        ScoreOverlay.SetOverlayScore(this.score);
+        scoreText.text = string.Format(scoreTextFormat, GameScore.score);
 
-        scoreEndText.text = string.Format(scoreEndTextFormat, this.score);
+        scoreEndText.text = string.Format(scoreEndTextFormat, GameScore.score);
 
         // 記錄儲存分數
         // 游戏结束或切换场景时保存分数到玩家的偏好设置中
 
 
-        ScoreManager.SetFinalScore(this.score);
+        ScoreManager.SetFinalScore(GameScore.score);
     }
 
     public void SaveScore()
     {
-        PlayerPrefs.SetInt("GameScore", this.score);
+        PlayerPrefs.SetInt("GameScore", GameScore.score);
         PlayerPrefs.Save();
     }
 

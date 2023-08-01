@@ -33,7 +33,7 @@ public class ExtraScore : MonoBehaviour
 
 			if (gameScore)
 			{
-				int currentScore = gameScore.score;
+				int currentScore = GameScore.score;
 				gameScore.AddScore(currentScore); // 将当前场景分数累加到主场景的得分中
 				gameScore.UpdateScore(); // 更新主场景的 UI 元素
 			}

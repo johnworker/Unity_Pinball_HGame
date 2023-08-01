@@ -6,11 +6,10 @@ using TMPro;
 
 public class Score : MonoBehaviour
 {
-    public GameScore gameScore;
 
     void ShowTotalScore()
     {
-        int totalScore = gameScore.score;
+        int totalScore = GameScore.score;
         // 使用總分進行後續操作
     }
 }

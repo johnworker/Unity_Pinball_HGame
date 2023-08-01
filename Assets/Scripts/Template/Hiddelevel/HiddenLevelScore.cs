@@ -14,8 +14,6 @@ public class HiddenLevelScore : MonoBehaviour
 	private void Awake()
     {
 		// 读取保存的分数
-		int getOverlayScore = ScoreOverlay.GetOverlayScore();
-		scoreText.text = string.Format(scoreTextFormat, getOverlayScore);
 	}
 
 	/// <summary>
@@ -23,9 +21,7 @@ public class HiddenLevelScore : MonoBehaviour
 	/// </summary>
 	/// <param name="score">Amount</param>
 	public void AddScore(int score)
-	{
-		GameScore.instance.AddScore(score);
-		
+	{		
 		this.score += score;
 		UpdateLevelScore();
 
