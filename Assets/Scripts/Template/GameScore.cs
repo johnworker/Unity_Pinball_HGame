@@ -56,6 +56,8 @@ public class GameScore : MonoBehaviour
     {
         UpdateLevelScore();
         scoreText.text = string.Format(scoreTextFormat, this.score);
+        ScoreOverlay.SetOverlayScore(this.score);
+
         scoreEndText.text = string.Format(scoreEndTextFormat, this.score);
 
         // 記錄儲存分數
