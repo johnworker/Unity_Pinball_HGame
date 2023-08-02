@@ -29,6 +29,8 @@ public class Game : MonoBehaviour {
 	[Header("彈珠生成的位置")]
 	public Transform ballSpawnPoint;
 
+	// 定義應該清除分數的布林值
+	private bool shouldClearScore = false;
 
 	// 管理遊戲的分數
 	//public GameScore score { get; private set; }
@@ -74,6 +76,8 @@ public class Game : MonoBehaviour {
 	 這些設置可以在遊戲開始時呈現正確的初始畫面和狀態。
 	*/
 
+
+
 	/// <summary>
 	/// 開始遊戲, 將套用正確的活動並顯示右側面板
 	/// </summary>
@@ -83,8 +87,6 @@ public class Game : MonoBehaviour {
 		ballCountText.text = ballCount.ToString();
 
 		SetBallReady(true);
-
-		//gameScore.ClearScore();
 
 	}
 

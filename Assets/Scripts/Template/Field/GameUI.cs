@@ -9,7 +9,7 @@ public class GameUI : MonoBehaviour
 {
     public TextMeshProUGUI scoreEndText;
     public string scoreEndTextFormat = "最終スコア: {0}";
-
+    private GameScore gameScore;
 
     private void Start()
     {
@@ -20,6 +20,7 @@ public class GameUI : MonoBehaviour
     // UI按鈕觸發遊戲場景載入
     public void StartGame()
     {
+        
         SceneManager.LoadScene("測試彈珠台");
 
         /*
@@ -43,6 +44,7 @@ public class GameUI : MonoBehaviour
         */
 
     }
+
 
 
     public void EndGame()

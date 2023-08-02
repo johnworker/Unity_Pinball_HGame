@@ -38,11 +38,11 @@ public class GameScore : MonoBehaviour
     /// <summary>
     /// 清除当前分数
     /// </summary>
-    /*public void ClearScore()
+    public void ClearScore()
     {
          score = 0;
          UpdateScore();
-    }*/
+    }
 
     /// <summary>
     /// 使用正確的格式更新分数 UI 元素
