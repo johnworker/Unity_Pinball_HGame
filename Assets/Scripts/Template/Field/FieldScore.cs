@@ -10,7 +10,7 @@ public class FieldScore : MonoBehaviour {
 	private GameScore gameScore;
 
 	void Start() {
-		gameScore = Game.instance.score;
+		gameScore = Game.instance.gameScore;
 	}
 
 	/// <summary>

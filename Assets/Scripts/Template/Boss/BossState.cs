@@ -23,7 +23,7 @@ public class BossState : MonoBehaviour
     public float waitDuration = 1f; // 等待動畫播放時間
     public float waitDurationChangeAni = 10f; // 等待動畫播放時間
 
-    private bool isHurt = false; // 標記以跟踪魔王是否受傷
+    //private bool isHurt = false; // 標記以跟踪魔王是否受傷
 
     private int hitCount = 0; // 記錄被打的次數
     [Header("可被打擊次數")]

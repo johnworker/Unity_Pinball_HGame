@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class Game : MonoBehaviour {
 	// instance：這是一個靜態屬性，用於存儲 Game 類別的唯一實例。
 	// 可以通過 Game.instance 來訪問這個實例。
-	public static Game instance { get; private set; }
+	public static Game instance;
 
 	[Header("遊戲是否處於活動狀態")]
 	public bool isActive = false;
@@ -31,14 +31,14 @@ public class Game : MonoBehaviour {
 
 
 	// 管理遊戲的分數
-	public GameScore score { get; private set; }
+	//public GameScore score { get; private set; }
+	public GameScore gameScore;
 	// 用於控制遊戲的行為
 	public GameController controller { get; private set; }
 
 	void Awake() {
 		instance = this;
-
-		score = GetComponent<GameScore>();
+		gameScore = GetComponent<GameScore>();
 		controller = GetComponent<GameController>();
 		StartGame();
 	}
@@ -84,7 +84,7 @@ public class Game : MonoBehaviour {
 
 		SetBallReady(true);
 
-		score.ClearScore();
+		gameScore.ClearScore();
 
 	}
 

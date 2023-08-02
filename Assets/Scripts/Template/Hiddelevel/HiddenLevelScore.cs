@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class HiddenLevelScore : MonoBehaviour
 {
 	public int score;
+	private GameScore gameScore;
 
 	public TextMeshProUGUI scoreText;
 	public string scoreTextFormat = "スコア: {0}";
@@ -13,30 +14,23 @@ public class HiddenLevelScore : MonoBehaviour
 
 	private void Awake()
     {
-		// 读取保存的分数
+		gameScore = GetComponent<GameScore>();
+		gameScore.UpdateScore();
 	}
 
 	/// <summary>
 	/// 將分數添加到當前分數
 	/// </summary>
 	/// <param name="score">Amount</param>
-	public void AddScore(int score)
-	{		
-		this.score += score;
+	public void AddScore(int scoreToAdd)
+	{
+		
+		score += scoreToAdd;
+		gameScore.AddScore(scoreToAdd);
 		UpdateLevelScore();
 
-		// 将分数保存到本地
-		PlayerPrefs.SetInt("HiddenLevelScore", score);
 	}
 
-	/// <summary>
-	/// 清除當前分數
-	/// </summary>
-	public void ClearScore()
-	{
-		//score = 0;
-		//UpdateLevelScore();
-	}
 
 	/// <summary>
 	/// 使用正確的格式更新分數 UI 元素
@@ -45,7 +39,6 @@ public class HiddenLevelScore : MonoBehaviour
 	{
 		scoreText.text = string.Format(scoreTextFormat, this.score);
 
-		// ScoreManager.SetFinalScore(this.score);
 	}
 
 }

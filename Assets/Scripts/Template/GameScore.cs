@@ -18,9 +18,6 @@ public class GameScore : MonoBehaviour
     private void Awake()
     {
 
-        // 获取隐藏关卡得分并合并到当前得分
-        int hiddenLevelScore = PlayerPrefs.GetInt("HiddenLevelScore", 0);
-        AddScore(hiddenLevelScore);
 
         // 更新显示在游戏面板上
         UpdateScore();
@@ -52,7 +49,6 @@ public class GameScore : MonoBehaviour
     /// </summary>
     public void UpdateScore()
     {
-        UpdateLevelScore();
         scoreText.text = string.Format(scoreTextFormat, GameScore.score);
 
         scoreEndText.text = string.Format(scoreEndTextFormat, GameScore.score);
@@ -63,29 +59,4 @@ public class GameScore : MonoBehaviour
 
         ScoreManager.SetFinalScore(GameScore.score);
     }
-
-    public void SaveScore()
-    {
-        PlayerPrefs.SetInt("GameScore", GameScore.score);
-        PlayerPrefs.Save();
-    }
-
-    // 合并隐藏关卡得分到主场景
-    public void ReturnToMainScore(int extraScore)
-    {
-        score += extraScore;
-    }
-
-    // 合并HiddenLevelScore的UpdateLevelScore到GameScore的UpdateScore
-    public void UpdateLevelScore()
-    {
-        // 获取HiddenLevelScore组件
-        HiddenLevelScore hiddenLevelScore = GetComponent<HiddenLevelScore>();
-        if (hiddenLevelScore)
-        {
-            // 调用UpdateLevelScore方法
-            hiddenLevelScore.UpdateLevelScore();
-        }
-    }
-
 }
