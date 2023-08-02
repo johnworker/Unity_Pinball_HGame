@@ -14,8 +14,9 @@ public class HiddenLevelScore : MonoBehaviour
 
 	private void Awake()
     {
-		gameScore = GetComponent<GameScore>();
-		gameScore.UpdateScore();
+		int finalScore = ScoreManager.GetFinalScore();
+		this.score = finalScore;
+		scoreText.text = string.Format(scoreTextFormat, this.score);
 	}
 
 	/// <summary>
@@ -24,9 +25,8 @@ public class HiddenLevelScore : MonoBehaviour
 	/// <param name="score">Amount</param>
 	public void AddScore(int scoreToAdd)
 	{
-		
+		// 根據紀錄的 SetFinalScore(GameScore.score); 開始疊加分數
 		score += scoreToAdd;
-		gameScore.AddScore(scoreToAdd);
 		UpdateLevelScore();
 
 	}

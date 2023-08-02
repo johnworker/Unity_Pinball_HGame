@@ -7741,6 +7741,7 @@ MonoBehaviour:
   ballDisplay: {fileID: 1193190341}
   ballPrefab: {fileID: 114490561531822830, guid: fec322a09db1d494e8746a6d7030bf27, type: 3}
   ballSpawnPoint: {fileID: 1443309768}
+  gameScore: {fileID: 718441707}
 --- !u!114 &718441706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15986,7 +15987,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &1699265349
 AudioSource:
   m_ObjectHideFlags: 0

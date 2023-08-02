@@ -6,14 +6,10 @@ public class ExtraScore : MonoBehaviour
 {
 	public int score;
 
-	private HiddenLevelScore hiddenLevelScore;
-
 	private GameScore gameScore;
 
 	void Start()
 	{
-		// 获取HiddenLevelScore组件
-		hiddenLevelScore = GameObject.Find("隱藏關卡計數器").GetComponent<HiddenLevelScore>();
 
 		gameScore = FindObjectOfType<GameScore>();
 	}
@@ -29,14 +25,14 @@ public class ExtraScore : MonoBehaviour
 
 		if (ball)
 		{
-			hiddenLevelScore.AddScore(score);
-
+			gameScore.AddScore(score);
+			/*
 			if (gameScore)
 			{
 				int currentScore = GameScore.score;
 				gameScore.AddScore(currentScore); // 将当前场景分数累加到主场景的得分中
 				gameScore.UpdateScore(); // 更新主场景的 UI 元素
-			}
+			}*/
 		}
 
 	}

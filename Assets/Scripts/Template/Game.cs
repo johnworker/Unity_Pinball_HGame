@@ -84,7 +84,7 @@ public class Game : MonoBehaviour {
 
 		SetBallReady(true);
 
-		gameScore.ClearScore();
+		//gameScore.ClearScore();
 
 	}
 

@@ -34,7 +34,7 @@ public class FieldDuplicator : MonoBehaviour {
 
 			for (int i = 0; i < ballCount; i++) {
 				Instantiate(game.ballPrefab, ball.transform.position, ball.transform.rotation);
-				SystemSound.instance.PlaySound(soundGlassMagic, new Vector2(0.5f, 0.8f));
+				SystemSound.instance.PlaySound(soundGlassMagic, new Vector2(0.9f, 1.3f));
 			}
 		}
 	}

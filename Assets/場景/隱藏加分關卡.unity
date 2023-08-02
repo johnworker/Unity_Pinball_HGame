@@ -3232,6 +3232,7 @@ MonoBehaviour:
   ballDisplay: {fileID: 1193190341}
   ballPrefab: {fileID: 114490561531822830, guid: fec322a09db1d494e8746a6d7030bf27, type: 3}
   ballSpawnPoint: {fileID: 1443309768}
+  gameScore: {fileID: 718441707}
 --- !u!114 &718441706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3264,10 +3265,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04a1848d5a0a56a48b11c9ca7ded2d6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 453436159}
-  scoreTextFormat: 'Score: {0}'
+  scoreText: {fileID: 1391296755}
+  scoreTextFormat: "\u30B9\u30B3\u30A2: {0}"
   scoreEndText: {fileID: 1499913826}
-  scoreEndTextFormat: 'Final Score: {0}'
+  scoreEndTextFormat: "\u6700\u7D42\u30B9\u30B3\u30A2: {0}"
 --- !u!4 &718441708
 Transform:
   m_ObjectHideFlags: 0
@@ -3764,7 +3765,6 @@ GameObject:
   m_Component:
   - component: {fileID: 998604236}
   - component: {fileID: 998604235}
-  - component: {fileID: 998604237}
   m_Layer: 0
   m_Name: "\u96B1\u85CF\u95DC\u5361\u8A08\u6578\u5668"
   m_TagString: Untagged
@@ -3801,21 +3801,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &998604237
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 998604234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf747104aa93b9143a0dc450220af20d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 33
-  scoreText: {fileID: 1391296755}
-  scoreTextFormat: "\u30B9\u30B3\u30A2: {0}"
 --- !u!1 &1001957146
 GameObject:
   m_ObjectHideFlags: 0
@@ -6565,7 +6550,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &1895573448
 AudioSource:
   m_ObjectHideFlags: 0
