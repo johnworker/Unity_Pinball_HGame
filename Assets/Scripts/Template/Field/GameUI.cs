@@ -15,12 +15,15 @@ public class GameUI : MonoBehaviour
     {
         int finalScore = ScoreManager.GetFinalScore();
         scoreEndText.text = string.Format(scoreEndTextFormat, finalScore);
+
+        gameScore = FindObjectOfType<GameScore>();
     }
 
     // UI按鈕觸發遊戲場景載入
     public void StartGame()
     {
-        
+        GameScore.score = 0;
+
         SceneManager.LoadScene("測試彈珠台");
 
         /*

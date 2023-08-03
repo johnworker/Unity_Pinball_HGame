@@ -29,9 +29,6 @@ public class Game : MonoBehaviour {
 	[Header("彈珠生成的位置")]
 	public Transform ballSpawnPoint;
 
-	// 定義應該清除分數的布林值
-	private bool shouldClearScore = false;
-
 	// 管理遊戲的分數
 	//public GameScore score { get; private set; }
 	public GameScore gameScore;

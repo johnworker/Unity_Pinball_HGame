@@ -89,7 +89,7 @@ public class ObstacleGenerator : MonoBehaviour
 
         if (obstacle == null)
         {
-            yield break; // 协程提前结束
+            yield break; // 協程提前結束
         }
 
         Vector3 startPos = obstacle.transform.position;
@@ -101,10 +101,10 @@ public class ObstacleGenerator : MonoBehaviour
         Quaternion startRot = obstacle.transform.rotation;
         Quaternion endRot = Quaternion.LookRotation(endPos - startPos, Vector3.up);
 
-        // 检查障碍物是否为空，或者已经被销毁
+        // 檢查障礙物是否為空，或者已經被銷毀
         if (obstacle == null)
         {
-            yield break; // 协程提前结束
+            yield break; // 協程提前結束
         }
 
         float t = 0f;
@@ -137,14 +137,15 @@ public class ObstacleGenerator : MonoBehaviour
         // 緩慢旋轉面向 (0f, 180f, 0f)
         Quaternion currentRot = obstacle.transform.rotation;
         Quaternion targetRot = Quaternion.Euler(0f, 180f, 0f);
+
         float rotateDuration = 2f;
         float rotateT = 0f;
 
-        while (rotateT < 1f)
+        while (rotateT < 1f && obstacle != null) // 添加 obstacle != null 這裡檢查
         {
             rotateT += Time.deltaTime / rotateDuration;
             obstacle.transform.rotation = Quaternion.Slerp(currentRot, targetRot, rotateT);
-            //yield return null;
+            yield return null;
         }
 
     }
