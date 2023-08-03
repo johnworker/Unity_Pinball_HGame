@@ -13,6 +13,7 @@ public class GameUI : MonoBehaviour
 
     private void Start()
     {
+        Screen.SetResolution(720, 1280, false);
         int finalScore = ScoreManager.GetFinalScore();
         scoreEndText.text = string.Format(scoreEndTextFormat, finalScore);
 
