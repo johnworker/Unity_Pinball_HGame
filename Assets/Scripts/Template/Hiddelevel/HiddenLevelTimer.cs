@@ -59,7 +59,7 @@ public class HiddenLevelTimer : MonoBehaviour
         PlayerPrefs.SetInt("HiddenLevelScore", 0); // 清除隐藏关卡得分
 
         // 加载原始场景
-        SceneManager.LoadScene("測試彈珠台");
+        SceneManager.LoadScene("彈珠台草原場景");
 
         // 将分数添加到主场景分数
         GameScore gameScore = FindObjectOfType<GameScore>();

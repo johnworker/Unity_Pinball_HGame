@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: "Assets/\u5834\u666F/\u958B\u59CB\u756B\u9762.unity"
     guid: 1c93ca950a6abc84ca6be00026633077
   - enabled: 1
-    path: "Assets/\u5834\u666F/\u6E2C\u8A66\u5F48\u73E0\u53F0.unity"
+    path: "Assets/\u5834\u666F/\u5F48\u73E0\u53F0\u8349\u539F\u5834\u666F.unity"
     guid: 6bdddd221669f5543bea4022c7f63dbd
   - enabled: 1
     path: "Assets/\u5834\u666F/\u96B1\u85CF\u52A0\u5206\u95DC\u5361.unity"
@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/\u5834\u666F/\u52D5\u756B\u5C55\u793A.unity"
     guid: 759d1ae3653b04e4b8cadc4945488648
+  - enabled: 1
+    path: "Assets/\u5834\u666F/\u9078\u64C7\u5834\u666F\u5730\u5716.unity"
+    guid: e64b3c150eb6cbd4a917d26ae41ccffb
   m_configObjects: {}

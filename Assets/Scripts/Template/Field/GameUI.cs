@@ -25,7 +25,7 @@ public class GameUI : MonoBehaviour
     {
         GameScore.score = 0;
 
-        SceneManager.LoadScene("測試彈珠台");
+        SceneManager.LoadScene("彈珠台草原場景");
 
         /*
         Scene otherScene = SceneManager.GetSceneByName("OtherScene");
@@ -64,6 +64,11 @@ public class GameUI : MonoBehaviour
     public void PlayAnimationScene()
     {
         SceneManager.LoadScene("動畫展示");
+    }
+
+    public void SceneSelectionScene()
+    {
+        SceneManager.LoadScene("選擇場景地圖");
     }
 
 }
