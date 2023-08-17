@@ -4883,7 +4883,7 @@ MonoBehaviour:
   obstaclePrefab: {fileID: 6146714264416098927, guid: 0bf288aa6864fd14494a7841794911db, type: 3}
   generationInterval: 20
   spawnSize: {x: 4, y: 0.1, z: 3}
-  canSpawnTotal: 1
+  canSpawnTotal: 0
   moveDuration: 5
   moveRange: 1
 --- !u!1001 &694745056
