@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using TMPro;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -9,7 +7,7 @@ public class MapMenu : MonoBehaviour
     public RawImage[] mapImages;
     public Button[] buttons;
 
-    private string[] sceneNames = { "彈珠台草原場景", "彈珠台荒野場景", "SceneName3" }; // 替換為你的場景名稱
+    private string[] sceneNames = { "彈珠台草原場景", "彈珠台荒野場景" }; // 替換為你的場景名稱
 
     // 地圖編號
     private int selectedMap = 0;
@@ -33,6 +31,8 @@ public class MapMenu : MonoBehaviour
     {
         selectedMap = mapIndex;
         ShowMap(mapIndex);
+
+        //print(mapIndex);
     }
 
     // 顯示選定的地圖
