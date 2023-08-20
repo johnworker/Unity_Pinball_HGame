@@ -10,6 +10,13 @@ public class EnemyMovement : MonoBehaviour
     public Vector3 targetPosition;
     private bool isMoving = false;
 
+    private Vector3 lastGeneratedPosition;
+
+    private void Start()
+    {
+        lastGeneratedPosition = transform.position;
+    }
+
     private void Update()
     {
         if (isMoving)
@@ -18,22 +25,30 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
-    private void onDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, moveRange); // 繪製移動範圍的圓圈
-    }
-
     public void SetTargetPosition(Vector3 newPosition)
     {
         // 確保目標位置在移動範圍內
         targetPosition.x = Mathf.Clamp(targetPosition.x, transform.position.x - moveRange, transform.position.x + moveRange);
-        newPosition.x = Mathf.Clamp(newPosition.x, -4.0f, 4.0f); // 限制在 [-4, 4] 範圍內
+        newPosition.x = GenerateUniqueXPosition(newPosition.x);
         newPosition.y = 1.1f; // 限制 Y 軸高度為 1
-        newPosition.z = Mathf.Clamp(newPosition.z, transform.position.z - 2.0f, transform.position.z); // 限制在生成點到 -6 之間的隨機值
+        newPosition.z = Mathf.Clamp(newPosition.z, transform.position.z - 2.0f, transform.position.z); // 限制在生成點到 -2 之間的隨機值
         targetPosition = newPosition;
         isMoving = true;
     }
+
+    private float GenerateUniqueXPosition(float x)
+    {
+        float uniqueX = x;
+
+        while (Mathf.Abs(uniqueX - lastGeneratedPosition.x) < 1.0f) // 確保新生成的位置不與上一個位置過於接近
+        {
+            uniqueX = Random.Range(-1.0f, 1.0f); // 重新生成 X 位置
+        }
+
+        lastGeneratedPosition.x = uniqueX;
+        return uniqueX;
+    }
+
 
     private void MoveTowardsTarget()
     {

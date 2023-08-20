@@ -5,7 +5,7 @@ public class SpawnSystem : MonoBehaviour
 {
     [Header("生成怪物預置物")]
     public GameObject preEnemy;
-    [Header("生成怪物間隔時間"),Range(0, 60)]
+    [Header("生成怪物間隔時間"),Range(0, 300)]
     public float interval = 5f;
 	[Header("怪物生成點")]
 	public Transform spawnPoint;
@@ -18,7 +18,7 @@ public class SpawnSystem : MonoBehaviour
 
 	private void Start()
 	{
-		InvokeRepeating("SpawnEnemy", 0, interval);
+		InvokeRepeating("SpawnEnemy", 3, interval);
 	}
 
     private void SpawnEnemy()
