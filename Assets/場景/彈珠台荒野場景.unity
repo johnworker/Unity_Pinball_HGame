@@ -1094,7 +1094,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0e43d05ff5b99444bc1a4ba11f788a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  preEnemy: {fileID: 930793919223371208, guid: 5d90bb2d4f0700145bbc07e8f17916dd, type: 3}
+  preEnemy: {fileID: 4539267084453845520, guid: c06aac4b767032b43adf9e9b811f8b5f, type: 3}
   interval: 60
   spawnPoint: {fileID: 183793379}
   dataBasic: {fileID: 11400000, guid: d765d0542d125de4eb77148385ad8f58, type: 2}
@@ -1487,7 +1487,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 183793378}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.1, z: -4}
+  m_LocalPosition: {x: 0, y: -0.6, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

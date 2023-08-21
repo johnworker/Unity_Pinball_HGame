@@ -6,11 +6,12 @@ public class EnemyMovement : MonoBehaviour
 {
     public DataBasic dataBasic;
 
-    public float moveRange = 5.0f; // 移動範圍的半徑
-    public Vector3 targetPosition;
+    [Header("移動範圍的半徑")]
+    public float moveRange = 5.0f;
+    private Vector3 targetPosition;
     private bool isMoving = false;
 
-    private Vector3 lastGeneratedPosition;
+    private Vector3 lastGeneratedPosition; // 最後生成位置
 
     private void Start()
     {
@@ -30,7 +31,7 @@ public class EnemyMovement : MonoBehaviour
         // 確保目標位置在移動範圍內
         targetPosition.x = Mathf.Clamp(targetPosition.x, transform.position.x - moveRange, transform.position.x + moveRange);
         newPosition.x = GenerateUniqueXPosition(newPosition.x);
-        newPosition.y = 1.1f; // 限制 Y 軸高度為 1
+        newPosition.y = -0.6f; // 限制 Y 軸高度為 1
         newPosition.z = Mathf.Clamp(newPosition.z, transform.position.z - 2.0f, transform.position.z); // 限制在生成點到 -2 之間的隨機值
         targetPosition = newPosition;
         isMoving = true;

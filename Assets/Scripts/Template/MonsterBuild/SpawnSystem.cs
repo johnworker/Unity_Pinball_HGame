@@ -23,7 +23,7 @@ public class SpawnSystem : MonoBehaviour
 
     private void SpawnEnemy()
     {
-        GameObject spawnNewEnemy = Instantiate(preEnemy, spawnPoint.position, spawnPoint.rotation);
+        GameObject spawnNewEnemy = Instantiate(preEnemy, spawnPoint.position, Quaternion.Euler(0,180,0));
         EnemyMovement enemyMovement = spawnNewEnemy.GetComponent<EnemyMovement>();
 
         if (enemyMovement != null)
