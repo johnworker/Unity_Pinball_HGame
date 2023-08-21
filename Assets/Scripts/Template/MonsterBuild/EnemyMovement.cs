@@ -62,4 +62,12 @@ public class EnemyMovement : MonoBehaviour
             // 在到達目標位置時執行相應的操作，比如停止移動或改變行為
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ball"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }

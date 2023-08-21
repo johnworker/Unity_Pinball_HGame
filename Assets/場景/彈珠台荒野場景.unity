@@ -1095,11 +1095,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   preEnemy: {fileID: 4539267084453845520, guid: c06aac4b767032b43adf9e9b811f8b5f, type: 3}
-  interval: 60
+  interval: 3
   spawnPoint: {fileID: 183793379}
   dataBasic: {fileID: 11400000, guid: d765d0542d125de4eb77148385ad8f58, type: 2}
   movePointLeft: {fileID: 613240003}
   movePointRight: {fileID: 1405169448}
+  spawnEnemyBuild: {fileID: 1796408254}
+  ani: {fileID: 1796408259}
+  openDoor: "\u958B\u9580"
 --- !u!4 &128699370
 Transform:
   m_ObjectHideFlags: 0
