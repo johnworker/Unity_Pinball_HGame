@@ -2568,6 +2568,8 @@ GameObject:
   - component: {fileID: 341567567}
   - component: {fileID: 341567569}
   - component: {fileID: 341567570}
+  - component: {fileID: 341567571}
+  - component: {fileID: 341567572}
   m_Layer: 0
   m_Name: "\u6C99\u5875\u66B4\u7C92\u5B50\u4F4D\u7F6E"
   m_TagString: Untagged
@@ -7401,6 +7403,33 @@ CapsuleCollider:
   m_Height: 8
   m_Direction: 1
   m_Center: {x: 0, y: 2.5, z: -0.00000047683716}
+--- !u!114 &341567571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341567565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a169bbf9cf5db1d439e878ab255e8bb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: -10
+--- !u!114 &341567572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341567565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17eec05d5db92db49a396aa8cb87164a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceForce: 1.2
+  soundRebound: {fileID: 8300000, guid: 6e026e79d04007a4cb590244179163e4, type: 3}
 --- !u!1001 &348368321
 PrefabInstance:
   m_ObjectHideFlags: 0
