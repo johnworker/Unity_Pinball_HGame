@@ -3,7 +3,9 @@ using UnityEngine;
 
 public class SpiralParticleMovement : MonoBehaviour
 {
+    [Header("粒子系統")]
     public ParticleSystem particleSystem;
+
     public int particleCount = 500; // 要生成的粒子數量
     public float rotationSpeed = 3f;
     public float cylinderRadius = 10000f;

@@ -7415,7 +7415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a169bbf9cf5db1d439e878ab255e8bb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: -10
+  score: -20
 --- !u!114 &341567572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17690,7 +17690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a169bbf9cf5db1d439e878ab255e8bb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: -50
+  score: -10
 --- !u!65 &1796408258
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17724,6 +17724,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1796408261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796408254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fbd2406fb135c24f87850bbe12f75ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canHitCountNumbers: 10
 --- !u!1 &1804320838
 GameObject:
   m_ObjectHideFlags: 0
