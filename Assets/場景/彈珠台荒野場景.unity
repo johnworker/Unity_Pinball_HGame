@@ -10693,6 +10693,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8af23d3e51da27b40a82bbe1edece64d, type: 2}
+    - target: {fileID: 99399993890532883, guid: ba474437a24d5b74ab4d6c8d06c40ec2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ba474437a24d5b74ab4d6c8d06c40ec2, type: 3}
       propertyPath: m_Name
       value: "\u57FA\u672CQ\u7248\u5973\u89D2\u6A21\u578B\u7B2C\u4E94\u7248\u505A\u52D5\u756B"
@@ -10727,10 +10731,49 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.83
-  m_Height: 5.46
+  m_Radius: 1.24
+  m_Height: 8.26
   m_Direction: 1
-  m_Center: {x: 0, y: 1.77, z: -0.32}
+  m_Center: {x: 0, y: 3.16, z: -0.44}
+--- !u!114 &748778021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748778018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 839d40f92509813439c3d3f184de0caa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ani: {fileID: 748778022}
+  BossGirl: {fileID: 748778018}
+  crushEffect: {fileID: 4851862442797722643, guid: fe957b4f26cdcb34f8084b6b650ffba5, type: 3}
+  waitDuration: 1
+  waitDurationChangeAni: 10
+  canHitCountNumbers: 40
+  parIdleHurt: "\u7B49\u5F85\u53D7\u50B7"
+--- !u!95 &748778022
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748778018}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e675bf206fadbf542aa63e512f058d81, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &764409791
 PrefabInstance:
   m_ObjectHideFlags: 0
