@@ -48,6 +48,12 @@ public class BossSecondState : MonoBehaviour
 
     private bool isHurtAnimationPlaying = false; // 用于标记受伤动画是否正在播放
 
+    [SerializeField, Header("受傷爆炸音效")]
+    private AudioClip soundExplode;
+    [SerializeField, Header("受傷音效")]
+    private AudioClip soundHurt;
+
+
     private void Start()
     {
         // 开始时，调用协程执行动画循环
@@ -117,6 +123,8 @@ public class BossSecondState : MonoBehaviour
         {
             // 如果被打擊兩次則播放粒子特效，角色的(子物件)衣服消失
             hitCount++; // 增加被打的次數
+            SystemSound.instance.PlaySound(soundHurt, new Vector2(4.8f, 5.3f));
+
 
             if (!isHurtAnimationPlaying)
             {
@@ -133,6 +141,7 @@ public class BossSecondState : MonoBehaviour
 
                 // 銷毀角色的服裝
                 Destroy(BossGirl.transform.Find("裙子").gameObject);
+                SystemSound.instance.PlaySound(soundExplode, new Vector2(0.5f, 0.8f));
 
             }
 

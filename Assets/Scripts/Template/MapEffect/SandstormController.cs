@@ -9,6 +9,12 @@ public class SandstormController : MonoBehaviour
     public float movementSpeed = 1.0f; // 沙塵暴的左右移動速度
     private bool isSandstormActive = false; // 標記沙塵暴是否正在進行
 
+    [SerializeField, Header("風聲音效")]
+    private AudioClip soundWindAcross;
+    [SerializeField, Header("沙子音效")]
+    private AudioClip soundSandAcross;
+
+
     private void Start()
     {
         sandstormParticles.SetActive(false);
@@ -23,6 +29,8 @@ public class SandstormController : MonoBehaviour
             // 如果沙塵暴不在進行中，則開始沙塵暴
             if (!isSandstormActive)
             {
+                SystemSound.instance.PlaySound(soundWindAcross, new Vector2(0.9f, 1.6f));
+
                 isSandstormActive = true;
                 sandstormParticles.SetActive(true);
                 StartCoroutine(MoveSandstorm()); // 開始移動沙塵暴
@@ -46,5 +54,6 @@ public class SandstormController : MonoBehaviour
             sandstormParticles.transform.position = new Vector3(currentPosition.x + horizontalMovement, currentPosition.y, currentPosition.z);
             yield return null;
         }
+        SystemSound.instance.PlaySound(soundSandAcross, new Vector2(0.2f, 0.4f));
     }
 }
