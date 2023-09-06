@@ -108,7 +108,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -126,7 +126,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: "\u9AA8\u67B6|\u9AA8\u67B6Action (1)"
+      name: "\u7AD9\u7ACB\u53D7\u50B7"
       takeName: "\u9AA8\u67B6|\u9AA8\u67B6Action"
       internalID: 2123335611580012557
       firstFrame: 40
@@ -155,11 +155,40 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: "\u9AA8\u67B6|\u9AA8\u67B6Action (2)"
+      name: "\u8D70\u8DEF"
       takeName: "\u9AA8\u67B6|\u9AA8\u67B6Action"
       internalID: -8029550767482142865
-      firstFrame: 0
-      lastFrame: 225
+      firstFrame: 80
+      lastFrame: 115
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: "\u5750\u4E0B"
+      takeName: "\u9AA8\u67B6|\u9AA8\u67B6Action"
+      internalID: 2539496682695197523
+      firstFrame: 120
+      lastFrame: 130
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -184,10 +213,68 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: "\u9AA8\u67B6|\u9AA8\u67B6Action (3)"
+      name: "\u6062\u5FA9\u7AD9\u7ACB"
       takeName: "\u9AA8\u67B6|\u9AA8\u67B6Action"
-      internalID: 2539496682695197523
-      firstFrame: 0
+      internalID: -9188868447955207623
+      firstFrame: 130
+      lastFrame: 150
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: "\u8D70\u8DEF\u53D7\u50B7"
+      takeName: "\u9AA8\u67B6|\u9AA8\u67B6Action"
+      internalID: 375676398540800414
+      firstFrame: 160
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: "\u5750\u4E0B\u53D7\u50B7"
+      takeName: "\u9AA8\u67B6|\u9AA8\u67B6Action"
+      internalID: 5174805637635394405
+      firstFrame: 210
       lastFrame: 225
       wrapMode: 0
       orientationOffsetY: 0
@@ -215,7 +302,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 1.6
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -268,7 +355,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 1.6
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

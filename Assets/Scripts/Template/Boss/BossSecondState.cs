@@ -67,12 +67,14 @@ public class BossSecondState : MonoBehaviour
         {
             ani.SetBool(parWalk, true);
             ani.SetBool(parStandIdle, false);
+            ani.SetBool(parResumeStand, false);
         }
         else if (isSitting)
         {
             ani.SetBool(parSit, true);
             ani.SetBool(parWalk, false);
             ani.SetBool(parStandIdle, false);
+            ani.SetBool(parResumeStand, false);
         }
         else
         {
