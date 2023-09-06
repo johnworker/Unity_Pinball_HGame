@@ -9436,7 +9436,7 @@ GameObject:
   - component: {fileID: 1511615878}
   - component: {fileID: 1511615877}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: "\u53E2\u6797\u50B3\u9001\u9580"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9520,7 +9520,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1511615875}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1520738440
 PrefabInstance:
   m_ObjectHideFlags: 0
