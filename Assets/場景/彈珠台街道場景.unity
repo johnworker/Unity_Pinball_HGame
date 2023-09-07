@@ -3168,6 +3168,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bounceForce: 1.4
   soundRebound: {fileID: 8300000, guid: 9114bbe7f4af36f49bf597d80287f003, type: 3}
+--- !u!95 &474057379
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474057374}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6571221602f88324e93e8e613ca22c68, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &481819006
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3336,7 +3356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveDistance: 1.35
-  moveSpeed: 5
+  moveSpeed: 9
   interval: 3
   initialDelay: 2
   soundFenceMove: {fileID: 8300000, guid: e408344cfdb250c49801e107a2210592, type: 3}
@@ -3869,7 +3889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveDistance: 1.35
-  moveSpeed: 9
+  moveSpeed: 11
   interval: 3
   initialDelay: 2
   soundFenceMove: {fileID: 8300000, guid: e408344cfdb250c49801e107a2210592, type: 3}
@@ -11128,7 +11148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveDistance: 1.35
-  moveSpeed: 7
+  moveSpeed: 10
   interval: 3
   initialDelay: 2
   soundFenceMove: {fileID: 8300000, guid: e408344cfdb250c49801e107a2210592, type: 3}
@@ -12452,7 +12472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveDistance: 1.35
-  moveSpeed: 11
+  moveSpeed: 12
   interval: 3
   initialDelay: 2
   soundFenceMove: {fileID: 8300000, guid: e408344cfdb250c49801e107a2210592, type: 3}
