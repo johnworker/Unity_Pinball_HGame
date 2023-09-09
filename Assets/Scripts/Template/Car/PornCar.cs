@@ -21,6 +21,9 @@ public class PornCar : MonoBehaviour
     [SerializeField, Header("受傷爆炸音效")]
     private AudioClip soundExplode;
 
+    [SerializeField, Header("車損傷音效")]
+    private AudioClip soundCarDamage;
+
 
     private void Start()
     {
@@ -56,6 +59,7 @@ public class PornCar : MonoBehaviour
         {
             // 如果被打擊兩次則播放粒子特效，角色的(子物件)衣服消失
             hitCount++; // 增加被打的次數
+            SystemSound.instance.PlaySound(soundCarDamage, new Vector2(1.5f, 1.8f));
 
 
             // 如果被打次數達到，則銷毀障礙物

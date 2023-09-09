@@ -16867,7 +16867,7 @@ MonoBehaviour:
   waitDurationChangeAni: 10
   endSitTime: 5
   endwalkTime: 25
-  canHitCountNumbers: 40
+  canHitCountNumbers: 1000
   parStandIdle: "\u7AD9\u7ACB\u7B49\u5F85"
   parStandHurt: "\u7AD9\u7ACB\u53D7\u50B7"
   parResumeStand: "\u6062\u5FA9\u7AD9\u7ACB"

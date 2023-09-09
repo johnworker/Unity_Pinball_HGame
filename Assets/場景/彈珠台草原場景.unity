@@ -16653,7 +16653,7 @@ MonoBehaviour:
   parStandHurt: "\u7AD9\u7ACB\u53D7\u50B7"
   waitDuration: 1
   waitDurationChangeAni: 5
-  canHitCountNumbers: 20
+  canHitCountNumbers: 1000
   soundHurt: {fileID: 8300000, guid: f3b3af02045c90044a40226a56a27372, type: 3}
   soundExplode: {fileID: 8300000, guid: 6e026e79d04007a4cb590244179163e4, type: 3}
 --- !u!95 &1771928869
