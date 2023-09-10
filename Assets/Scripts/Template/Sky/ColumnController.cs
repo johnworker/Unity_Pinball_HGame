@@ -4,38 +4,69 @@ using UnityEngine;
 public class ColumnController : MonoBehaviour
 {
     public float fallSpeed = 2f; // 下降速度
-    public float spawnInterval = 2f; // 生成間隔時間（秒）
+    public float spawnInterval = 60f; // 生成间隔时间（秒）
+
+    public Vector2 spawnAreaSize = new Vector2(4f, 4f); // 生成区域大小
+
+    private float nextSpawnTime = 0f;
+
+    public GameObject column;
+
+    private int hitCount = 0; // 記錄被打的次數
+    [Header("可被打擊次數")]
+    public int canHitCountNumbers = 1; // 記錄被打的次數
+    [SerializeField, Header("撞擊音效")]
+    private AudioClip soundHit;
+
 
     private void Start()
     {
-        // 啟動協程以定期生成"天柱"
-        StartCoroutine(SpawnColumn());
-    }
-
-    private IEnumerator SpawnColumn()
-    {
-        while (true)
-        {
-            // 在一定時間後生成"天柱"
-            yield return new WaitForSeconds(spawnInterval);
-
-            // 生成"天柱"的新實例，位置在屏幕上方以外
-            Vector3 spawnPosition = new Vector3(Random.Range(-4f, 4f), 10f, 0f);
-            Instantiate(gameObject, spawnPosition, Quaternion.identity);
-        }
+        // 初始生成时间
+        nextSpawnTime = Time.time + spawnInterval;
     }
 
     private void Update()
     {
-        // 讓"天柱"向下移動
-        transform.Translate(Vector3.down * fallSpeed * Time.deltaTime);
+        // 检查是否可以生成
+        if (Time.time >= nextSpawnTime)
+        {
+            // 随机生成位置
+            Vector3 spawnPosition = new Vector3(
+                Random.Range(-spawnAreaSize.x / 2f, spawnAreaSize.x / 2f),
+                spawnAreaSize.y,
+                0f
+            );
+
+            // 随机生成旋转角度
+            Quaternion spawnRotation = Quaternion.Euler(-90f, 0f, 0f);
+
+            // 生成"天柱"的新实例
+            Instantiate(column, spawnPosition, spawnRotation);
+
+            // 更新下一次生成时间
+            nextSpawnTime = Time.time + spawnInterval;
+        }
     }
 
-    // 在Scene視圖中繪製Gizmos
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ball"))
+        {
+            hitCount++;
+            SystemSound.instance.PlaySound(soundHit, new Vector2(0.9f, 1.6f));
+
+
+            if (hitCount >= canHitCountNumbers)
+            {
+                Destroy(gameObject);
+            }
+        }
+    }
+
+    // 在Scene视图中绘制Gizmos
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireCube(transform.position, new Vector3(1f, 1f, 1f)); // 顯示"天柱"的邊界框
+        Gizmos.DrawWireCube(transform.position, new Vector3(spawnAreaSize.x, 1f, spawnAreaSize.y));
     }
-
 }
