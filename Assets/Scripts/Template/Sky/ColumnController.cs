@@ -58,7 +58,12 @@ public class ColumnController : MonoBehaviour
 
             if (hitCount >= canHitCountNumbers)
             {
-                Destroy(gameObject);
+                // 查找名为"天柱"的子对象并销毁它
+                Transform child = transform.Find("天柱");
+                if (child != null)
+                {
+                    Destroy(child.gameObject);
+                }
             }
         }
     }
