@@ -7,7 +7,7 @@ public class MapMenu : MonoBehaviour
     public RawImage[] mapImages;
     public Button[] buttons;
 
-    private string[] sceneNames = { "彈珠台草原場景", "彈珠台荒野場景" }; // 替換為你的場景名稱
+    private string[] sceneNames = { "彈珠台草原場景", "彈珠台荒野場景", "彈珠台街道場景", "彈珠台天堂場景" }; // 替換為你的場景名稱
 
     // 地圖編號
     private int selectedMap = 0;
