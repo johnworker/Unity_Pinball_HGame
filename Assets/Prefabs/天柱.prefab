@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 5410666520928937079}
   - component: {fileID: 6689843437391575293}
   - component: {fileID: 6689843437391575292}
+  - component: {fileID: 2739713154524420961}
+  - component: {fileID: 7256414556117224680}
   m_Layer: 0
   m_Name: "\u5929\u67F1"
   m_TagString: Untagged
@@ -27,14 +29,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5770924185605817762}
-  m_LocalRotation: {x: -0.7071068, y: -0.000000030908623, z: -0.000000030908623, w: 0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -1.8159007, y: 3.083, z: 3.7724466}
-  m_LocalScale: {x: 94.94467, y: 90.481255, z: 147.04031}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 31.12, y: 29.657026, z: 48.19538}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!33 &7850473170392944829
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -115,3 +117,30 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 0
+--- !u!114 &2739713154524420961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5770924185605817762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22275b8a51defe1499b0b49490956242, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canHitCountNumbers: 1
+  soundHit: {fileID: 8300000, guid: 85626402c7e83ab46a9bbd45b02b0bc1, type: 3}
+--- !u!114 &7256414556117224680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5770924185605817762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a169bbf9cf5db1d439e878ab255e8bb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: -100

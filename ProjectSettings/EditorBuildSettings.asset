@@ -15,6 +15,12 @@ EditorBuildSettings:
     path: "Assets/\u5834\u666F/\u5F48\u73E0\u53F0\u8352\u91CE\u5834\u666F.unity"
     guid: 425571483dc2f3946839319cf7e94b57
   - enabled: 1
+    path: "Assets/\u5834\u666F/\u5F48\u73E0\u53F0\u8857\u9053\u5834\u666F.unity"
+    guid: cb58d73fc9bd60d4498eb4407363da9e
+  - enabled: 1
+    path: "Assets/\u5834\u666F/\u5F48\u73E0\u53F0\u5929\u5802\u5834\u666F.unity"
+    guid: 55d0ebf001de1164ab6fa3f95cdc3b3d
+  - enabled: 1
     path: "Assets/\u5834\u666F/\u96B1\u85CF\u52A0\u5206\u95DC\u5361.unity"
     guid: 77dd46be4c9ca5e4cb67a25f889e3c02
   - enabled: 1

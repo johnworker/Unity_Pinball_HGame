@@ -12,12 +12,6 @@ public class ColumnController : MonoBehaviour
 
     public GameObject column;
 
-    private int hitCount = 0; // 記錄被打的次數
-    [Header("可被打擊次數")]
-    public int canHitCountNumbers = 1; // 記錄被打的次數
-    [SerializeField, Header("撞擊音效")]
-    private AudioClip soundHit;
-
 
     private void Start()
     {
@@ -48,25 +42,6 @@ public class ColumnController : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Ball"))
-        {
-            hitCount++;
-            SystemSound.instance.PlaySound(soundHit, new Vector2(0.9f, 1.6f));
-
-
-            if (hitCount >= canHitCountNumbers)
-            {
-                // 查找名为"天柱"的子对象并销毁它
-                Transform child = transform.Find("天柱");
-                if (child != null)
-                {
-                    Destroy(child.gameObject);
-                }
-            }
-        }
-    }
 
     // 在Scene视图中绘制Gizmos
     private void OnDrawGizmos()
