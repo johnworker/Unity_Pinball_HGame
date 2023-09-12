@@ -27,13 +27,13 @@ public class BossFourth : MonoBehaviour
     public int canHitCountNumbers = 50; // 記錄被打的次數
 
     [Header("等待搖動參數")]
-    public string parIdle = "等待";  // 站立等待 bool
+    public string parIdle = "等待";  
     [Header("等待受傷搖動參數")]
-    public string parIdleHurt = "等待受傷";  // 站立受傷 bool
+    public string parIdleHurt = "等待受傷";  
     [Header("搖動參數")]
-    public string parShake = "亂動";  // 走路 bool
+    public string parShake = "晃動";  
     [Header("搖動受傷參數")]
-    public string parShakeHurt = "亂動受傷";  // 走路受傷 bool
+    public string parShakeHurt = "晃動受傷";  
 
 
     private bool isShake = false; // 用于标记是否正在走路

@@ -1,9 +1,64 @@
 fileFormatVersion: 2
-guid: e5c75bc38a8d45d4582d8cdafb6d9cd4
+guid: 4576adf201fa78945ac4ada8ba0f1f12
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6750\u8CEA.001"
+    second: {fileID: 2100000, guid: c3092dbc4f51dc84bbe135b07bd87a3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6750\u8CEA.003"
+    second: {fileID: 2100000, guid: c3092dbc4f51dc84bbe135b07bd87a3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6750\u8CEA.007"
+    second: {fileID: 2100000, guid: c3092dbc4f51dc84bbe135b07bd87a3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6750\u8CEA.015"
+    second: {fileID: 2100000, guid: c3092dbc4f51dc84bbe135b07bd87a3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6750\u8CEA.017"
+    second: {fileID: 2100000, guid: c3092dbc4f51dc84bbe135b07bd87a3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6750\u8CEA.020"
+    second: {fileID: 2100000, guid: c3092dbc4f51dc84bbe135b07bd87a3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6750\u8CEA.022"
+    second: {fileID: 2100000, guid: c3092dbc4f51dc84bbe135b07bd87a3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6750\u8CEA.024"
+    second: {fileID: 2100000, guid: c3092dbc4f51dc84bbe135b07bd87a3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6750\u8CEA.025"
+    second: {fileID: 2100000, guid: c3092dbc4f51dc84bbe135b07bd87a3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6750\u8CEA.029"
+    second: {fileID: 2100000, guid: c3092dbc4f51dc84bbe135b07bd87a3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6750\u8CEA.035"
+    second: {fileID: 2100000, guid: c3092dbc4f51dc84bbe135b07bd87a3f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -33,11 +88,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: "\u7B49\u5F85\u53D7\u50B7"
+      name: "\u9AA8\u67B6|\u9AA8\u67B6Action"
       takeName: "\u9AA8\u67B6|\u9AA8\u67B6Action"
       internalID: -4139047674318071871
-      firstFrame: 100
-      lastFrame: 120
+      firstFrame: 0
+      lastFrame: 90
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -151,7 +206,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1.3
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -204,7 +259,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1.3
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
