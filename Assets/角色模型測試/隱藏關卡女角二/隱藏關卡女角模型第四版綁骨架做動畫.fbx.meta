@@ -1,9 +1,44 @@
 fileFormatVersion: 2
-guid: 97088ffd406780b4082e077880280b43
+guid: 6f3f3e6a22af38640ad93002669d821e
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6750\u8CEA.012"
+    second: {fileID: 2100000, guid: 3d5b2045498597f4cb0dceaa40fb00bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6750\u8CEA.024"
+    second: {fileID: 2100000, guid: 3d5b2045498597f4cb0dceaa40fb00bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6750\u8CEA.025"
+    second: {fileID: 2100000, guid: 3d5b2045498597f4cb0dceaa40fb00bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6750\u8CEA.027"
+    second: {fileID: 2100000, guid: de010a811bbf0c948ac4c699af5398f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6750\u8CEA.028"
+    second: {fileID: 2100000, guid: de010a811bbf0c948ac4c699af5398f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6750\u8CEA.030"
+    second: {fileID: 2100000, guid: de010a811bbf0c948ac4c699af5398f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6750\u8CEA.034"
+    second: {fileID: 2100000, guid: de010a811bbf0c948ac4c699af5398f4, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -33,11 +68,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: "\u64FA\u52D5"
-      takeName: "\u5927\u65A7|\u5927\u65A7Action"
-      internalID: 8151776508654049255
-      firstFrame: 10
-      lastFrame: 59
+      name: "\u7B49\u5F85"
+      takeName: "\u9AA8\u67B6|\u9AA8\u67B6Action"
+      internalID: -4139047674318071871
+      firstFrame: 0
+      lastFrame: 20
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -62,18 +97,18 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: "\u7B49\u5F85"
-      takeName: "\u5927\u65A7|\u5927\u65A7Action"
-      internalID: -8231917570259672855
-      firstFrame: 0
-      lastFrame: 9
+      name: "\u53D7\u50B7"
+      takeName: "\u9AA8\u67B6|\u9AA8\u67B6Action"
+      internalID: -2497394641815977557
+      firstFrame: 20
+      lastFrame: 40
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -93,7 +128,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 2.2
+    globalScale: 1.6
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -146,7 +181,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 2.2
+    globalScale: 1.6
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

@@ -20,6 +20,10 @@ public class HiddelLevelGirl : MonoBehaviour
         {
             StartCoroutine(PlayHurtAnimation());
         }
+        if (collision.gameObject.CompareTag("擋板") && !isHurt)
+        {
+            StartCoroutine(PlayHurtAnimation());
+        }
     }
 
     private IEnumerator PlayHurtAnimation()

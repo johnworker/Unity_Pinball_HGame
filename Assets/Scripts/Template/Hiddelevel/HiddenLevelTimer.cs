@@ -14,6 +14,14 @@ public class HiddenLevelTimer : MonoBehaviour
 
     private int hiddenLevelScore = 0; // 隐藏关卡得分
 
+    [Header("返回關卡")]
+    public string parLevelReturn = "彈珠台草原場景";  // 車移動 bool
+
+    [Header("返回不同關卡")]
+    public string[] scenesToLoad; // 存储场景名称的字符串数组
+
+    [Header("返回不同關卡編號")]
+    public int currentLevel = 1; // 例如，假设当前是第一个关卡
 
     private void Start()
     {
@@ -57,9 +65,14 @@ public class HiddenLevelTimer : MonoBehaviour
         // 获取隐藏关卡得分并保存到主场景分数
         int hiddenLevelScore = PlayerPrefs.GetInt("HiddenLevelScore", 0);
         PlayerPrefs.SetInt("HiddenLevelScore", 0); // 清除隐藏关卡得分
+        
 
-        // 加载原始场景
-        SceneManager.LoadScene("彈珠台草原場景");
+        // 根据当前关卡选择要加载的场景
+        if (currentLevel >= 1 && currentLevel <= scenesToLoad.Length)
+        {
+            string sceneToLoad = scenesToLoad[currentLevel - 1]; // 注意数组索引从0开始，所以要减1
+            SceneManager.LoadScene(sceneToLoad);
+        }
 
         // 将分数添加到主场景分数
         GameScore gameScore = FindObjectOfType<GameScore>();
