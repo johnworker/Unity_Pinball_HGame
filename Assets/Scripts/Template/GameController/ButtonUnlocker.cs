@@ -9,10 +9,11 @@ public class ButtonUnlocker : MonoBehaviour
 
     void Start()
     {
-        CheckAndUnlockButton();
+        CheckAndUnlockButtonOne();
+        CheckAndUnlockButtonTwo();
     }
 
-    public void CheckAndUnlockButton()
+    public void CheckAndUnlockButtonOne()
     {
         int finalScore = ScoreManager.GetFinalScore();
         if (finalScore >= 1000)
@@ -26,4 +27,20 @@ public class ButtonUnlocker : MonoBehaviour
             buttonImage.gameObject.SetActive(true); // 显示按钮中的图片
         }
     }
+
+    public void CheckAndUnlockButtonTwo()
+    {
+        int finalScore = ScoreManager.GetFinalScore();
+        if (finalScore >= 2000)
+        {
+            unlockButton.interactable = true; // 解锁按钮
+            buttonImage.gameObject.SetActive(false); // 隐藏按钮中的图片
+        }
+        else
+        {
+            unlockButton.interactable = false; // 锁定按钮
+            buttonImage.gameObject.SetActive(true); // 显示按钮中的图片
+        }
+    }
+
 }
