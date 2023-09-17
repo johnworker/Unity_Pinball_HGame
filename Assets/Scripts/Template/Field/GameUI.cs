@@ -63,7 +63,7 @@ public class GameUI : MonoBehaviour
 
     public void PlayAnimationScene()
     {
-        SceneManager.LoadScene("動畫展示");
+        SceneManager.LoadScene("動畫展示 1");
     }
 
     public void SceneSelectionScene()
