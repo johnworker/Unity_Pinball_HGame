@@ -24,7 +24,6 @@ public class SpecialLevelScoring : MonoBehaviour
             if (gameScore != null)
             {
                 gameScore.AddScore(scoreValue);
-                print(scoreValue);
             }
         }
     }
