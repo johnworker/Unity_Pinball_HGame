@@ -36,8 +36,26 @@ EditorBuildSettings:
     path: "Assets/\u5834\u666F/\u52D5\u756B\u5C55\u793A\u6240.unity"
     guid: ce01f3b1194be4e4891595061e473ac6
   - enabled: 1
-    path: "Assets/\u5834\u666F/\u52D5\u756B\u5C55\u793A.unity"
+    path: "Assets/\u5834\u666F/\u52D5\u756B\u5C55\u793A 1.unity"
     guid: 759d1ae3653b04e4b8cadc4945488648
+  - enabled: 1
+    path: "Assets/\u5834\u666F/\u52D5\u756B\u5C55\u793A 2.unity"
+    guid: 8db9b2f06cc3f284ab2b41068313674f
+  - enabled: 1
+    path: "Assets/\u5834\u666F/\u52D5\u756B\u5C55\u793A 3.unity"
+    guid: ded964d1d4b280f46b06aa9dd77a6fd0
+  - enabled: 1
+    path: "Assets/\u5834\u666F/\u52D5\u756B\u5C55\u793A 4.unity"
+    guid: 02243b5244a1ae24fbcfc50e711c1156
+  - enabled: 1
+    path: "Assets/\u5834\u666F/\u52D5\u756B\u5C55\u793A 5.unity"
+    guid: d7978c7490981e54199257b9d493e223
+  - enabled: 1
+    path: "Assets/\u5834\u666F/\u52D5\u756B\u5C55\u793A 6.unity"
+    guid: 780ffb8f97d484d45a54c98b76b4e32d
+  - enabled: 1
+    path: "Assets/\u5834\u666F/\u52D5\u756B\u5C55\u793A 7.unity"
+    guid: 697b3480d1dc0a340a28b74a9e0318d6
   - enabled: 1
     path: "Assets/\u5834\u666F/\u9078\u64C7\u5834\u666F\u5730\u5716.unity"
     guid: e64b3c150eb6cbd4a917d26ae41ccffb
