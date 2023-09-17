@@ -11,13 +11,33 @@ public class ButtonUnlocker : MonoBehaviour
     void Start()
     {
         // 设置每个按钮所需的最低分数
-        if (gameObject.name == "ButtonOne") // 假设你的按钮有一个唯一的名称
+        if (gameObject.name == "搓湯圓") // 假设你的按钮有一个唯一的名称
+        {
+            requiredScore = 500;
+        }
+        else if (gameObject.name == "乘坐起飛式") 
+        {
+            requiredScore = 600;
+        }
+        else if (gameObject.name == "掛鎖式")
+        {
+            requiredScore = 700;
+        }
+        else if (gameObject.name == "擁抱式")
+        {
+            requiredScore = 800;
+        }
+        else if (gameObject.name == "老漢綁架式")
+        {
+            requiredScore = 900;
+        }
+        else if (gameObject.name == "腳踏車式")
         {
             requiredScore = 1000;
         }
-        else if (gameObject.name == "ButtonTwo") // 假设你的第二个按钮也有一个唯一的名称
+        else if (gameObject.name == "老漢推車") 
         {
-            requiredScore = 2000;
+            requiredScore = 2500;
         }
 
         CheckAndUnlockButton();

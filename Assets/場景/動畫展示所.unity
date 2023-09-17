@@ -210,14 +210,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 718441710}
         m_TargetAssemblyTypeName: GameUI, Assembly-CSharp
-        m_MethodName: PlayAnimationScene
-        m_Mode: 1
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: "\u52D5\u756B\u5C55\u793A 4"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &17289966
@@ -345,14 +345,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 718441710}
         m_TargetAssemblyTypeName: GameUI, Assembly-CSharp
-        m_MethodName: PlayAnimationScene
-        m_Mode: 1
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: "\u52D5\u756B\u5C55\u793A 5"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &30617549
@@ -717,14 +717,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 718441710}
         m_TargetAssemblyTypeName: GameUI, Assembly-CSharp
-        m_MethodName: PlayAnimationScene
-        m_Mode: 1
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: "\u52D5\u756B\u5C55\u793A 7"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &125329432
@@ -1208,14 +1208,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 718441710}
         m_TargetAssemblyTypeName: GameUI, Assembly-CSharp
-        m_MethodName: PlayAnimationScene
-        m_Mode: 1
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: "\u52D5\u756B\u5C55\u793A 6"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &369529527
@@ -3709,7 +3709,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "\u6413\u6E6F\u5713"
+          m_StringArgument: "\u52D5\u756B\u5C55\u793A 1"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1350543673
@@ -5514,14 +5514,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 718441710}
         m_TargetAssemblyTypeName: GameUI, Assembly-CSharp
-        m_MethodName: PlayAnimationScene
-        m_Mode: 1
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: "\u52D5\u756B\u5C55\u793A 2"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1850287861
@@ -5849,14 +5849,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 718441710}
         m_TargetAssemblyTypeName: GameUI, Assembly-CSharp
-        m_MethodName: PlayAnimationScene
-        m_Mode: 1
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: "\u52D5\u756B\u5C55\u793A 3"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2020776991
