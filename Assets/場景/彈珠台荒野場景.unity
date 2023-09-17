@@ -1141,7 +1141,7 @@ Transform:
   - {fileID: 613240004}
   - {fileID: 1405169449}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &133623732
 GameObject:
@@ -7665,7 +7665,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &374603453 stripped
 Transform:
@@ -8501,7 +8501,7 @@ RectTransform:
   - {fileID: 1910870287}
   - {fileID: 1001957147}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -11542,7 +11542,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &880024362
 GameObject:
@@ -15644,7 +15644,7 @@ RectTransform:
   m_Children:
   - {fileID: 1344103485}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -17509,7 +17509,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &1699265349
 AudioSource:
   m_ObjectHideFlags: 0
@@ -17520,7 +17520,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 526817b96ecd58643b76e10cca69c874, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8570017d58a92cf4c9ea016eca69626f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.4
   m_Pitch: 1.05
@@ -17619,7 +17619,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1715675007
 PrefabInstance:
@@ -18866,7 +18866,7 @@ Transform:
   m_Children:
   - {fileID: 341567566}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1889002956
 MonoBehaviour:
@@ -19112,7 +19112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hiddenLevelSceneName: "\u96B1\u85CF\u52A0\u5206\u95DC\u5361"
   soundKnock: {fileID: 8300000, guid: bb4efe92479a53046b85891e03d3e60e, type: 3}
-  soundTheMill: {fileID: 8300000, guid: 5a6d00e376be3b64f9b391ee189f0e01, type: 3}
+  soundBuildHit: {fileID: 0}
 --- !u!1001 &1899778534
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20267,7 +20267,7 @@ Transform:
   m_Children:
   - {fileID: 1796408255}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1001 &2134726636
 PrefabInstance:
