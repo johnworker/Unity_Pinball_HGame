@@ -8819,7 +8819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hiddenLevelSceneName: "\u96B1\u85CF\u5922\u9768\u79C0\u95DC\u5361"
   soundKnock: {fileID: 8300000, guid: 2e5310512e6db0d4b92ea7ceae64254f, type: 3}
-  soundBuildHit: {fileID: 0}
+  soundBuildHit: {fileID: 8300000, guid: 15658b9346307264584eb70aa79241ad, type: 3}
 --- !u!136 &1151807101
 CapsuleCollider:
   m_ObjectHideFlags: 0
