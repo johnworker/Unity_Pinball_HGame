@@ -10,15 +10,15 @@ public class HiddenLevelTrigger : MonoBehaviour
     [SerializeField, Header("碰撞音效")]
     private AudioClip soundKnock;
 
-    [SerializeField, Header("磨坊用音效")]
-    private AudioClip soundTheMill;
+    [SerializeField, Header("建築撞擊音效")]
+    private AudioClip soundBuildHit;
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
             // 播放磨坊碰到球的音效
-            SystemSound.instance.PlaySound(soundTheMill, new Vector2(1f, 2f));
+            SystemSound.instance.PlaySound(soundBuildHit, new Vector2(1f, 2f));
         }
     }
 

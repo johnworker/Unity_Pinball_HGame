@@ -18593,7 +18593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canHitCountNumbers: 1
-  soundTentHit: {fileID: 8300000, guid: 15658b9346307264584eb70aa79241ad, type: 3}
+  soundBuildHit: {fileID: 8300000, guid: 15658b9346307264584eb70aa79241ad, type: 3}
 --- !u!135 &1796408263
 SphereCollider:
   m_ObjectHideFlags: 0
