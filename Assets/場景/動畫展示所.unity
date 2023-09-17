@@ -2303,7 +2303,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unlockButton: {fileID: 1350543672}
-  buttonImage: {fileID: 1374040475}
+  buttonImages:
+  - {fileID: 1374040475}
+  - {fileID: 1921533650}
+  - {fileID: 431100032}
+  - {fileID: 602054264}
+  - {fileID: 1387933867}
+  - {fileID: 2009214851}
+  - {fileID: 160001848}
 --- !u!1 &725428840
 GameObject:
   m_ObjectHideFlags: 0
@@ -3695,14 +3702,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 718441710}
         m_TargetAssemblyTypeName: GameUI, Assembly-CSharp
-        m_MethodName: PlayAnimationScene
-        m_Mode: 1
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: "\u6413\u6E6F\u5713"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1350543673
