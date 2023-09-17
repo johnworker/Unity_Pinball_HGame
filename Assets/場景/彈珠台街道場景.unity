@@ -1738,7 +1738,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bounceForce: 1.5
-  soundRebound: {fileID: 8300000, guid: 9114bbe7f4af36f49bf597d80287f003, type: 3}
+  soundRebound: {fileID: 8300000, guid: c42d1aedcdcb89c4e966ea3dd3056ce2, type: 3}
 --- !u!114 &150311698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2548,6 +2548,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 10
+--- !u!114 &288249419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288249415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17eec05d5db92db49a396aa8cb87164a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceForce: 0.3
+  soundRebound: {fileID: 8300000, guid: 0fc8733505021874782c3b08e928e83c, type: 3}
 --- !u!1001 &311117732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3945,7 +3959,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canHitCountNumbers: 10
   soundBellTowerHit: {fileID: 8300000, guid: 4c5a81368def618418ff2f7669ed41a5, type: 3}
-  ani: {fileID: 0}
+  ani: {fileID: 474057379}
   parShake: "\u64FA\u52D5"
   parShakeEnd: "\u64FA\u52D5\u7D50\u675F"
 --- !u!1001 &481819006
@@ -4259,6 +4273,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 10
+--- !u!114 &487955466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487955463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17eec05d5db92db49a396aa8cb87164a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceForce: 0.3
+  soundRebound: {fileID: 8300000, guid: 0fc8733505021874782c3b08e928e83c, type: 3}
 --- !u!1001 &499021385
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4837,6 +4865,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 10
+--- !u!114 &525608809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525608805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17eec05d5db92db49a396aa8cb87164a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceForce: 0.3
+  soundRebound: {fileID: 8300000, guid: 0fc8733505021874782c3b08e928e83c, type: 3}
 --- !u!1 &571768463
 GameObject:
   m_ObjectHideFlags: 0
@@ -5194,6 +5236,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 10
+--- !u!114 &606548037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606548033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17eec05d5db92db49a396aa8cb87164a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceForce: 0.3
+  soundRebound: {fileID: 8300000, guid: 0fc8733505021874782c3b08e928e83c, type: 3}
 --- !u!1001 &606813707
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7576,7 +7632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bounceForce: 1.5
-  soundRebound: {fileID: 8300000, guid: 9114bbe7f4af36f49bf597d80287f003, type: 3}
+  soundRebound: {fileID: 8300000, guid: c42d1aedcdcb89c4e966ea3dd3056ce2, type: 3}
 --- !u!114 &973345196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8009,6 +8065,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 10
+--- !u!114 &1019519688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019519685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17eec05d5db92db49a396aa8cb87164a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceForce: 0.3
+  soundRebound: {fileID: 8300000, guid: 0fc8733505021874782c3b08e928e83c, type: 3}
 --- !u!1 &1029513701
 GameObject:
   m_ObjectHideFlags: 0
@@ -8472,6 +8542,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 10
+--- !u!114 &1091423903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091423899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17eec05d5db92db49a396aa8cb87164a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceForce: 0.3
+  soundRebound: {fileID: 8300000, guid: 0fc8733505021874782c3b08e928e83c, type: 3}
 --- !u!1001 &1095734940
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8818,8 +8902,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hiddenLevelSceneName: "\u96B1\u85CF\u5922\u9768\u79C0\u95DC\u5361"
-  soundKnock: {fileID: 8300000, guid: 2e5310512e6db0d4b92ea7ceae64254f, type: 3}
-  soundBuildHit: {fileID: 8300000, guid: 15658b9346307264584eb70aa79241ad, type: 3}
+  soundKnock: {fileID: 8300000, guid: ad7ac784dce4232488657bba58b3dea2, type: 3}
+  soundBuildHit: {fileID: 8300000, guid: c42d1aedcdcb89c4e966ea3dd3056ce2, type: 3}
 --- !u!136 &1151807101
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9209,6 +9293,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 10
+--- !u!114 &1189438811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189438807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17eec05d5db92db49a396aa8cb87164a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceForce: 0.3
+  soundRebound: {fileID: 8300000, guid: 0fc8733505021874782c3b08e928e83c, type: 3}
 --- !u!1 &1193190341
 GameObject:
   m_ObjectHideFlags: 0
@@ -11555,7 +11653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bounceForce: 1.5
-  soundRebound: {fileID: 8300000, guid: 9114bbe7f4af36f49bf597d80287f003, type: 3}
+  soundRebound: {fileID: 8300000, guid: c42d1aedcdcb89c4e966ea3dd3056ce2, type: 3}
 --- !u!1 &1499913824
 GameObject:
   m_ObjectHideFlags: 0
@@ -13846,6 +13944,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 10
+--- !u!114 &1777617947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777617943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17eec05d5db92db49a396aa8cb87164a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceForce: 0.3
+  soundRebound: {fileID: 8300000, guid: 0fc8733505021874782c3b08e928e83c, type: 3}
 --- !u!1 &1796377339
 GameObject:
   m_ObjectHideFlags: 0
@@ -14101,7 +14213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bounceForce: 1.5
-  soundRebound: {fileID: 8300000, guid: 9114bbe7f4af36f49bf597d80287f003, type: 3}
+  soundRebound: {fileID: 8300000, guid: c42d1aedcdcb89c4e966ea3dd3056ce2, type: 3}
 --- !u!114 &1813506438
 MonoBehaviour:
   m_ObjectHideFlags: 0

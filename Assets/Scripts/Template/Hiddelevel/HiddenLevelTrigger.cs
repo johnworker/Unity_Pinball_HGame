@@ -34,7 +34,7 @@ public class HiddenLevelTrigger : MonoBehaviour
     // 在此處實現隱藏關卡解鎖的邏輯
     private void UnlockHiddenLevel()
     {
-        SystemSound.instance.PlaySound(soundKnock, new Vector2(1f, 1.5f));
+        SystemSound.instance.PlaySound(soundKnock, new Vector2(8f, 8.5f));
 
         isHiddenLevelUnlocked = true;
         // 可以在此處播放解鎖音效或顯示解鎖提示等
