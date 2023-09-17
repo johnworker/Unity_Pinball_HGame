@@ -61,9 +61,39 @@ public class GameUI : MonoBehaviour
         SceneManager.LoadScene("動畫展示所");
     }
 
-    public void PlayAnimationScene()
+    public void PlayAnimationSceneOne()
     {
         SceneManager.LoadScene("動畫展示 1");
+    }
+
+    public void PlayAnimationSceneTwo()
+    {
+        SceneManager.LoadScene("動畫展示 2");
+    }
+
+    public void PlayAnimationSceneThree()
+    {
+        SceneManager.LoadScene("動畫展示 3");
+    }
+
+    public void PlayAnimationSceneFour()
+    {
+        SceneManager.LoadScene("動畫展示 4");
+    }
+
+    public void PlayAnimationSceneFive()
+    {
+        SceneManager.LoadScene("動畫展示 5");
+    }
+
+    public void PlayAnimationSceneSix()
+    {
+        SceneManager.LoadScene("動畫展示 6");
+    }
+
+    public void PlayAnimationSceneSeven()
+    {
+        SceneManager.LoadScene("動畫展示 7");
     }
 
     public void SceneSelectionScene()
