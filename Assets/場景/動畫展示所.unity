@@ -2302,16 +2302,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f889b1604f3adf142ae28280d39c6ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unlockButton: {fileID: 1350543672}
-  buttonImages:
-  - {fileID: 1374040475}
-  - {fileID: 1921533650}
-  - {fileID: 431100032}
-  - {fileID: 602054264}
-  - {fileID: 1387933867}
-  - {fileID: 2009214851}
-  - {fileID: 160001848}
-  totleScore: {fileID: 1391296755}
+  buttons:
+  - button: {fileID: 1350543672}
+    unlockScore: 1000
+    buttonImages:
+    - {fileID: 1374040475}
+  - button: {fileID: 1850287860}
+    unlockScore: 2000
+    buttonImages:
+    - {fileID: 1921533650}
+  - button: {fileID: 2020776990}
+    unlockScore: 3000
+    buttonImages:
+    - {fileID: 431100032}
+  - button: {fileID: 17289965}
+    unlockScore: 6000
+    buttonImages:
+    - {fileID: 602054264}
+  - button: {fileID: 30617548}
+    unlockScore: 12000
+    buttonImages:
+    - {fileID: 1387933867}
+  - button: {fileID: 369529526}
+    unlockScore: 18000
+    buttonImages:
+    - {fileID: 2009214851}
+  - button: {fileID: 125329431}
+    unlockScore: 30000
+    buttonImages:
+    - {fileID: 160001848}
 --- !u!1 &725428840
 GameObject:
   m_ObjectHideFlags: 0

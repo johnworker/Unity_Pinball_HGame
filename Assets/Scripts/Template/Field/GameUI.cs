@@ -60,12 +60,6 @@ public class GameUI : MonoBehaviour
     {
         SceneManager.LoadScene("動畫展示所");
     }
-    /*
-    public void PlayAnimationSceneOne()
-    {
-        SceneManager.LoadScene("動畫展示 1");
-    }
-    */
 
     public void LoadScene(string sceneName)
     {
