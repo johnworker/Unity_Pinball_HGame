@@ -1395,7 +1395,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataBasic: {fileID: 11400000, guid: d765d0542d125de4eb77148385ad8f58, type: 2}
   moveRange: 5
-  targetPosition: {x: 0, y: 0, z: 0}
+  obstacleSoundHurt: {fileID: 8300000, guid: bda20be375347cb4abd352f14c05420f, type: 3}
 --- !u!114 &132367158
 MonoBehaviour:
   m_ObjectHideFlags: 0

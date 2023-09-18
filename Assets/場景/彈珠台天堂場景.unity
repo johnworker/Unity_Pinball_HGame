@@ -10136,7 +10136,7 @@ MonoBehaviour:
   parShake: "\u6643\u52D5"
   parShakeHurt: "\u6643\u52D5\u53D7\u50B7"
   soundExplode: {fileID: 8300000, guid: 6e026e79d04007a4cb590244179163e4, type: 3}
-  soundHurt: {fileID: 8300000, guid: f107aedd278d017498b51960e2e2c3e6, type: 3}
+  soundHurt: {fileID: 8300000, guid: bda20be375347cb4abd352f14c05420f, type: 3}
 --- !u!114 &1397636888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12609,7 +12609,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0db9bacecb6abac4e8b6d8d69340442f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.7
+  m_Volume: 0.5
   m_Pitch: 1.05
   Loop: 1
   Mute: 0

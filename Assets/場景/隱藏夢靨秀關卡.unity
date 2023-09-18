@@ -7043,7 +7043,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ani: {fileID: 1998834339}
   parHurt: "\u53D7\u50B7"
-  hiddelSoundHurt: {fileID: 8300000, guid: f3b3af02045c90044a40226a56a27372, type: 3}
+  hiddelSoundHurt: {fileID: 8300000, guid: 4112ab777704b5646b6987513ab146e5, type: 3}
 --- !u!1 &2007326240
 GameObject:
   m_ObjectHideFlags: 0

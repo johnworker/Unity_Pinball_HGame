@@ -16876,7 +16876,7 @@ MonoBehaviour:
   parSit: "\u5750\u4E0B"
   parSitHurt: "\u5750\u4E0B\u53D7\u50B7"
   soundExplode: {fileID: 8300000, guid: 6e026e79d04007a4cb590244179163e4, type: 3}
-  soundHurt: {fileID: 8300000, guid: f107aedd278d017498b51960e2e2c3e6, type: 3}
+  soundHurt: {fileID: 8300000, guid: 1e48ea1e2523f284e857739f977318b5, type: 3}
 --- !u!95 &1569356395
 Animator:
   serializedVersion: 4

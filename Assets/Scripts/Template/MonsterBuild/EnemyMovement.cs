@@ -13,6 +13,9 @@ public class EnemyMovement : MonoBehaviour
 
     private Vector3 lastGeneratedPosition; // 最後生成位置
 
+    [SerializeField, Header("受傷音效")]
+    private AudioClip obstacleSoundHurt;
+
     private void Start()
     {
         lastGeneratedPosition = transform.position;
@@ -67,6 +70,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
+            SystemSound.instance.PlaySound(obstacleSoundHurt, new Vector2(2f, 2.3f));
             Destroy(gameObject);
         }
     }

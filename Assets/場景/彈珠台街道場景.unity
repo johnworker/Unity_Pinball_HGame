@@ -1409,7 +1409,7 @@ MonoBehaviour:
   parShake: "\u4E82\u52D5"
   parShakeHurt: "\u4E82\u52D5\u53D7\u50B7"
   soundExplode: {fileID: 8300000, guid: 6e026e79d04007a4cb590244179163e4, type: 3}
-  soundHurt: {fileID: 8300000, guid: f107aedd278d017498b51960e2e2c3e6, type: 3}
+  soundHurt: {fileID: 8300000, guid: 4112ab777704b5646b6987513ab146e5, type: 3}
 --- !u!136 &79248168
 CapsuleCollider:
   m_ObjectHideFlags: 0
